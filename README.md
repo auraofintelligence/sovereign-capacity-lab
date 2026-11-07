@@ -50,3 +50,13 @@ Atomic data is adapted from Extreme Matter Atlas by Luke Nathan Hayes / Strange 
 - https://auraofintelligence.github.io/installing-the-missing-middle/
 - https://auraofintelligence.github.io/gajra-earth-claude-build/
 - https://auraofintelligence.github.io/i-C-infinity-music-universe/albums/a-protopian-gambit/
+
+## Year explorer
+
+The fresh view opens at 2026. `assets/scenario.mjs` is the shared pure calculation engine for both selected-year results and every plotted year. The visible chart window initially ends at 2036 and can extend to 2040. The selected year and the power or population plan year are separate inputs.
+
+`assets/explorer.mjs` supplies live annual charts, pinned scenario comparison, exact readings, accessible data tables and a complete year-series CSV. Storage, ore, industrial output, orbital launch and radiator controls also have design-sensitivity curves. The project ledger has primary and secondary material bars. All graphics run locally without external chart libraries.
+
+Additional power accumulates from the 2025 base to the separately entered plan year with a normalised annual construction multiplier. Protected annual allocations rise linearly over that interval. Both hold at their plan levels afterwards. Population uses a compound interpolation to its entered plan-year anchor, then extends that rate. These are explicit editable assumptions dated 7 November 2026, not measured annual production data.
+
+Scenario format 2 retains these path inputs. Version 1 imports remain supported, using their original endpoint as their power and population plan year. Existing automatic tab settings migrate with their assumptions retained and the initial view moved to 2026. Subsequent chosen years persist between calculator pages.

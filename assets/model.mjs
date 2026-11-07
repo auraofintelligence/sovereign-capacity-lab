@@ -31,7 +31,8 @@ export function fleet(p) {
   const accident=fraction(p.accident,'Accident loss'),reduction=fraction(p.automationReduction,'Automation improvement'),other=fraction(p.otherLoss,'Other permanent losses');
   const hazard=1-(1-accident*(1-reduction))*(1-other);
   const start=+p.start,end=+p.end,split=+p.split;
-  if(![start,end,split].every(Number.isInteger)||end<start||end-start>60||split<start)throw Error('Use whole years with a horizon of at most 60 years.');
+  if(![start,end,split].every(Number.isInteger)||Math.abs(end-start)>60||split<start)throw Error('Use whole years with a horizon of at most 60 years.');
+  if(end<start)return {rows:[],hazard,year:end,units:0,cumulative:0,live:0,retired:0};
   let cumulative=0,rows=[];
   for(let year=start;year<=end;year++){
     const units=first*g1**Math.min(year-start,split-start)*g2**Math.max(0,year-split);
@@ -39,6 +40,20 @@ export function fleet(p) {
     cumulative+=units;const live=rows.reduce((s,r)=>s+r.units*(1-hazard)**(year-r.year),0)+units;
     rows.push({year,units,cumulative,live,retired:cumulative-live});
   }return {rows,hazard,...rows.at(-1)};
+}
+// New capacity is accumulated from annual construction, normalised to a dated plan.
+export function buildProgress(year,targetYear,growth=1,baseYear=2025){
+  if(![year,targetYear,baseYear].every(Number.isInteger)||targetYear<=baseYear||targetYear-baseYear>60)throw Error('Choose a build-plan year after the base year and within sixty years.');
+  positive(growth,'Annual construction multiplier',false);
+  const elapsed=Math.max(0,Math.min(year-baseYear,targetYear-baseYear)),total=targetYear-baseYear;
+  const additions=Array.from({length:total},(_,i)=>growth**i);
+  if(!additions.every(Number.isFinite))throw Error('Construction growth exceeds the supported range.');
+  return {capacityShare:additions.slice(0,elapsed).reduce((a,b)=>a+b,0)/additions.reduce((a,b)=>a+b,0),allocationShare:elapsed/total};
+}
+export function populationAtYear(base,target,targetYear,year,baseYear=2025){
+  positive(base,'Base population',false);positive(target,'Target population',false);
+  if(![year,targetYear,baseYear].every(Number.isInteger)||targetYear<=baseYear)throw Error('Choose a population plan year after 2025.');
+  return base*(target/base)**((year-baseYear)/(targetYear-baseYear));
 }
 export function procurement(finishedT,yieldRate,secondaryShare,allocatedSecondaryT=null) {
   const finished=positive(finishedT,'Finished material'),yield_=fraction(yieldRate,'Net yield',false),s=fraction(secondaryShare,'Secondary share');

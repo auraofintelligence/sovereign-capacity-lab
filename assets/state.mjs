@@ -1,6 +1,7 @@
-export const version=1;
+export const version=2;
 export const defaults={
- year:2036,start:2027,split:2031,first:1000000,early:2.5,late:1.6,
+ year:2026,chartEndYear:2036,powerTargetYear:2036,powerBuildGrowth:1.15,populationTargetYear:2036,
+ start:2027,split:2031,first:1000000,early:2.5,late:1.6,
  robotKg:60,robotW:250,accident:.005,automation:.99,otherLoss:.0025,
  yield:.95,secondary:.5,cuKg:6,alKg:21,feKg:20,robotBatteryKWh:.5,
  serviceJobs:1000000,serviceKg:18,recondition:.1111111111,
@@ -62,7 +63,10 @@ export function validateState(data){
 export function readScenario(text){
  if(text.length>200000)throw Error('This scenario file is too large.');
  const parsed=JSON.parse(text);
- if(parsed.version!==version)throw Error('This scenario version is not supported.');
- return validateState(parsed.inputs);
+ if(![1,version].includes(parsed.version))throw Error('This scenario version is not supported.');
+ if(!parsed.inputs||typeof parsed.inputs!=='object'||Array.isArray(parsed.inputs))throw Error('A scenario must contain an inputs object.');
+ const inputs={...parsed.inputs};
+ if(parsed.version===1){inputs.powerTargetYear=inputs.year||2036;inputs.populationTargetYear=inputs.year||2036;}
+ return validateState(inputs);
 }
 export function saveScenario(inputs){return JSON.stringify({version,date:'2026-11-07',inputs:validateState(inputs)},null,2);}
