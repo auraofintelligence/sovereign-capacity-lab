@@ -15,8 +15,8 @@ You may use a personal AI assistant to help read, explain or adapt the repo for 
 
 If you use or adapt the work, give clear credit:
 
-Based on extreme-matter-atlas by Luke Nathan Hayes / Strange But True / Aura of Intelligence.
-Original project: https://github.com/auraofintelligence/extreme-matter-atlas
+Based on Sovereign Capacity Lab by Luke Nathan Hayes / Strange But True / Aura of Intelligence.
+Original project: https://github.com/auraofintelligence/sovereign-capacity-lab
 Used under the Strange But True Public Source Licence.
 
 ## 2. What You Cannot Do Without Permission
@@ -49,6 +49,8 @@ You are responsible for what you put into the tool, what you export, and where y
 This licence only covers original material created by Luke Nathan Hayes / Strange But True / Aura of Intelligence.
 
 Third-party libraries, fonts, APIs, platforms, services or embedded material keep their own licences.
+
+The adapted element dataset retains the Extreme Matter Atlas attribution and its original Strange But True Public Source Licence, reproduced in data/Extreme_Matter_Atlas_LICENCE.md. Photographs retain the individual licences and credits listed on visuals.html. Those separate licences govern reuse of those photographs.
 
 ## 6. No Harmful Or Misleading Use
 

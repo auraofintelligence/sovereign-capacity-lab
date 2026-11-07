@@ -1,0 +1,19 @@
+# Sovereign Capacity Lab
+
+Research and default assumptions dated 7 November 2026. Local scenario tools for materials, clean energy, robots, compute and distributed capability.
+
+- [Start here](https://auraofintelligence.github.io/sovereign-capacity-lab/index.html): Change the assumptions. Follow the atoms, machines and electricity through to useful local capability.
+- [Power budget](https://auraofintelligence.github.io/sovereign-capacity-lab/power.html): Build new capability while preserving the electricity allocated to clean-energy transition and essential development.
+- [Robots and repair](https://auraofintelligence.github.io/sovereign-capacity-lab/machines.html): Explore annual production, surviving fleets, refurbishment, motors and the material in each machine.
+- [Solar and storage](https://auraofintelligence.github.io/sovereign-capacity-lab/storage.html): Separate power ratings, delivered energy, losses and the atomic materials needed by a chosen design.
+- [Elements and feedstocks](https://auraofintelligence.github.io/sovereign-capacity-lab/matter.html): Substitute a source mineral, change its grade and recovery, then compare the required output with existing industry.
+- [Project material ledger](https://auraofintelligence.github.io/sovereign-capacity-lab/ledger.html): Create a bill of materials for factories, grids, robots, panels, service parts and other equipment.
+- [Space infrastructure](https://auraofintelligence.github.io/sovereign-capacity-lab/space.html): Size on-board generation, heat rejection, payload transport and power delivered to other users.
+- [Australia and 2032](https://auraofintelligence.github.io/sovereign-capacity-lab/australia.html): Connect population growth, domestic industry, civic robots, sovereign compute and global exports.
+- [Read the paper](https://auraofintelligence.github.io/sovereign-capacity-lab/report.html): Read the integrated research paper with dated references and download the Word version.
+- [Sources and methods](https://auraofintelligence.github.io/sovereign-capacity-lab/sources.html): Inspect the dated sources, the calculation boundaries and the relationships between the projects.
+- [Image credits](https://auraofintelligence.github.io/sovereign-capacity-lab/visuals.html): Check image dates, original sources, reuse licences and exact generation prompts.
+- [Strange But True licence](https://auraofintelligence.github.io/sovereign-capacity-lab/licence.html): Read the terms for this public source project and the separate licences for photographs and adapted data.
+- [All pages](https://auraofintelligence.github.io/sovereign-capacity-lab/site-map.html): Move between the calculators, integrated paper, evidence and image credits.
+
+Public source under the Strange But True Public Source Licence. Commercial rights reserved. Photograph licences are listed separately in image credits.

@@ -1,5 +1,6 @@
 from pathlib import Path
 import html, json, re, shutil
+from experience import render, examples, credits, licence, figure, REPORT_INSERTS
 
 ROOT=Path(__file__).resolve().parent
 WORK=ROOT/'data'
@@ -24,6 +25,11 @@ pages=[
  ('report.html','report','Read the paper','Mining materials and power','Read the integrated research paper with dated references and download the Word version.'),
  ('sources.html','sources','Sources and methods','Evidence assumptions and reproducible methods','Inspect the dated sources, the calculation boundaries and the relationships between the projects.'),
 ]
+pages += [
+ ('visuals.html','visuals','Image credits','Photographs figures and generated concepts','Check image dates, original sources, reuse licences and exact generation prompts.'),
+ ('licence.html','licence','Strange But True licence','Strange But True Public Source Licence','Read the terms for this public source project and the separate licences for photographs and adapted data.'),
+ ('site-map.html','directory','All pages','Find your way through the laboratory','Move between the calculators, integrated paper, evidence and image credits.'),
+]
 esc=html.escape
 def link(url,label):return f'<a href="{esc(url,quote=True)}" target="_blank" rel="noopener noreferrer">{esc(label)}</a>'
 def prose_line(t):
@@ -43,33 +49,49 @@ used=set(re.findall(r'\{([a-z0-9-]+)\|',manuscript))|{'atlas','jra','fair-go-pub
 sources={k:v for k,v in sources.items() if k in used}
 (ROOT/'data/sources.json').write_text(json.dumps(sources,indent=2),encoding='utf-8')
 blocks=[];toc=[];index=0
+current_section="";paragraph_count=0;inserted=set()
 for text in manuscript.split('\n\n'):
  text=text.strip()
  if not text or text=='[[PAGEBREAK]]':continue
  if text.startswith('# '):continue
  if text.startswith('## '):
+  current_section=text[3:];paragraph_count=0
   index+=1;title=text[3:];anchor=f'section-{index}';toc.append((anchor,title));blocks.append(f'<h2 id="{anchor}" class="report-section">{esc(title)}</h2>')
  elif text.startswith('### '):blocks.append(f'<h3>{esc(text[4:])}</h3>')
- else:blocks.append('<p>'+prose_line(text)+'</p>')
+ else:
+  blocks.append('<p>'+prose_line(text)+'</p>');paragraph_count+=1
+  placement=REPORT_INSERTS.get(current_section)
+  if placement and paragraph_count==placement[0]:blocks.append(figure(placement[1]));inserted.add(placement[1])
+  if current_section=='Generation and storage also require materials' and paragraph_count==6:blocks.append(figure('figure-day-storage'))
+assert len(inserted)==len(REPORT_INSERTS), f'Missing inline figure placements: {set(x[1] for x in REPORT_INSERTS.values())-inserted}'
 docname='Mining_Materials_and_Power_Demand_and_Longevity_Reviewed_2026-11-07.docx'
 assert (ROOT/'documents'/docname).exists(), 'Place the verified Word paper in documents before rebuilding.'
-report='<p class="read-tools"><a class="button" href="documents/'+docname+'">Download the Word paper</a><button class="secondary" type="button" onclick="window.print()">Print the reading edition</button></p><details><summary>Paper contents</summary><ol class="report-toc">'+''.join(f'<li><a href="#{a}">{esc(t)}</a></li>'for a,t in toc)+'</ol></details><article class="prose">'+''.join(blocks)+'</article>'
+report='<div id="paper-start"></div><p class="read-tools"><a class="button" href="documents/'+docname+'">Download the Word paper</a><button class="secondary" type="button" onclick="window.print()">Print the reading edition</button></p><details><summary>Paper contents</summary><ol class="report-toc">'+''.join(f'<li><a href="#{a}">{esc(t)}</a></li>'for a,t in toc)+'</ol></details><article class="prose">'+''.join(blocks)+'</article>'
 register='<h2 id="references">Dated reference register</h2><ol class="reference-list prose">'+''.join('<li>'+esc(s['org'])+'. '+esc(s['date'])+'. '+link(s['url'],s['title'].replace('\u2014',', '))+'.</li>'for s in sources.values())+'</ol>'
 toolbar='''<div class="toolbar" aria-label="Scenario tools"><button type="button" data-action="export">Save scenario JSON</button><button type="button" data-action="import">Load scenario</button><button type="button" data-action="csv">Download result CSV</button><button type="button" data-action="share">Copy scenario link</button><button type="button" data-action="reset">Reset inputs</button><input id="import-file" type="file" accept=".json,application/json" hidden></div><p id="scenario-status" role="status" aria-live="polite">Default scenario dated 7 November 2026.</p><p id="notice" role="alert"></p>'''
 for filename,key,nav,title,desc in pages:
- iscalc=key not in ['report','sources']
+ iscalc=key in ['overview','power','machines','storage','matter','ledger','space','australia']
  content=intro if key=='overview' else australia_intro if key=='australia' else ''
- if iscalc:content+=toolbar+'<noscript><p>Calculators need JavaScript. The <a href="report.html">complete paper</a> and <a href="sources.html">dated sources and methods</a> can be read without it.</p></noscript><div id="calculator"></div>'
+ if iscalc:content+=toolbar+'<noscript><p>Calculators need JavaScript. The <a href="report.html">complete paper</a> and <a href="sources.html">dated sources and methods</a> can be read without it.</p></noscript><div id="calculator"></div>'+examples(key)
  if key=='overview':content+=routes+connections
  if key=='australia':content+=connections
  if key=='report':content+=report
  if key=='sources':content+=method+connections+register
- navhtml=''.join(f'<a href="{f}"'+(' aria-current="page"'if f==filename else '')+'>'+esc(n)+'</a>'for f,k,n,t,d in pages)
- scripts='<script src="assets/navigation.js"></script>'+('<script src="assets/elements.js"></script><script type="module" src="assets/app.mjs"></script>'if iscalc else '')
- htmltext=f'''<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="{esc(desc,quote=True)}"><meta name="theme-color" content="#173e35"><title>{esc(title)} | Sovereign Capacity Lab</title><link rel="canonical" href="{BASE+filename}"><link rel="stylesheet" href="assets/style.css"></head><body data-page="{key}"><a class="skip" href="#main">Skip to content</a><header class="masthead"><a class="brand" href="index.html">Sovereign Capacity Lab<small>Atoms to useful capability</small></a><a href="report.html">Read the research paper</a></header><div class="shell"><aside class="rail"><details open><summary>Explore the laboratory</summary><nav aria-label="Main navigation">{navhtml}</nav></details><p class="small">Joyful responsible abundance<br>Personal local and national sovereignty</p></aside><main id="main"><p class="eyebrow">Research and scenarios</p><h1>{esc(title)}</h1><p class="lede">{esc(desc)}</p><p class="updated">Research and default assumptions dated 7 November 2026</p>{content}</main></div><footer class="site-footer"><p>Luke Nathan Hayes · Aura of Intelligence · 2026. Independent scenario tools for useful machines, clean energy and distributed capability.</p><p><a href="sources.html">Sources and methods</a><a href="LICENCE.md">Public source licence</a><a href="https://github.com/auraofintelligence/sovereign-capacity-lab" target="_blank" rel="noopener noreferrer">Public repository</a></p></footer>{scripts}</body></html>'''
+ if key=='visuals':content+=credits()
+ if key=='licence':content+=licence()
+ if key=='directory':content+='<ol class="page-directory">'+''.join(f'<li><a href="{f}">{esc(n)}</a><p>{esc(d)}</p></li>'for f,k,n,t,d in pages)+'</ol>'
+ htmltext=render(filename,key,title,desc,content,pages,iscalc,docname)
  assert '\u2014' not in htmltext,filename
  (ROOT/filename).write_text(htmltext,encoding='utf-8')
 (ROOT/'.nojekyll').write_text('',encoding='utf-8')
 (ROOT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join('<url><loc>'+BASE+p[0]+'</loc></url>'for p in pages)+'</urlset>',encoding='utf-8')
 (ROOT/'robots.txt').write_text('User-agent: *\nAllow: /\nSitemap: '+BASE+'sitemap.xml\n',encoding='utf-8')
 print(json.dumps({'pages':len(pages),'sources':len(sources),'report_words':len(manuscript.split())}))
+
+(ROOT/'site.webmanifest').write_text(json.dumps({'name':'Sovereign Capacity Lab','short_name':'Capacity Lab','description':'Atoms to useful local capability','start_url':'./','scope':'./','display':'standalone','background_color':'#f4f4e8','theme_color':'#173e35','icons':[{'src':'icon-192.png','sizes':'192x192','type':'image/png'},{'src':'icon-512.png','sizes':'512x512','type':'image/png'}]},indent=2),encoding='utf-8')
+(ROOT/'llms.txt').write_text('# Sovereign Capacity Lab\n\nResearch and default assumptions dated 7 November 2026. Local scenario tools for materials, clean energy, robots, compute and distributed capability.\n\n'+''.join(f'- [{n}]({BASE+f}): {d}\n'for f,k,n,t,d in pages)+'\nPublic source under the Strange But True Public Source Licence. Commercial rights reserved. Photograph licences are listed separately in image credits.\n',encoding='utf-8')
+error_content='<div class="prose"><p>This address does not match a page in the laboratory.</p><p><a class="button" href="'+BASE+'">Return to the laboratory</a> <a href="'+BASE+'site-map.html">Browse all pages</a></p></div>'
+error_page=render('site-map.html','directory','Page not found','Find a calculator, the research paper or its sources.',error_content,pages,False,docname)
+# Absolute base keeps links and assets usable for nested missing URLs on GitHub Pages.
+error_page=error_page.replace('<head>','<head><base href="'+BASE+'"><meta name="robots" content="noindex">')
+(ROOT/'404.html').write_text(error_page,encoding='utf-8')

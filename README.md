@@ -27,6 +27,14 @@ Run `node --test scripts/model.test.mjs` for the physical and scenario tests. No
 
 The HTML reading edition, source register and navigation work without JavaScript. Interactive calculations need JavaScript. The repeated-day solar model illustrates timing and energy balance; it does not replace an hourly weather and network adequacy study.
 
+## Images and reading navigation
+
+Ten page-specific generated concepts, seven dated photographs and four worked explanatory figures are recorded in `data/visuals.json`. Responsive WebP assets live in `assets/images`. Exact generation prompts are in `data/image-prompts.json`. Image credits and individual photograph licences are published at `visuals.html`.
+
+The worked figures are static examples with their own stated inputs. Interactive calculator results respond to scenario edits. Rebuild the figures with `python scripts/build_figures.py` after installing Matplotlib, NumPy and Pillow in a development environment. Figure data is also published in `data/figure-data.json`.
+
+`experience.py` supplies image, navigation and footer components to `build.py`. Previous and next links, the all-pages menu, image credits, licence, site map and reading edition remain available without JavaScript. `navigation.js` adds the section index, reading progress, responsive menu behaviour and floating back-to-top link.
+
 ## Evidence and accounting
 
 Default observations and assumptions are dated 7 November 2026. Market forecasts retain their original publication dates. The different boundaries of end use, external factory feed, primary metal, secondary metal, ore and installed capacity remain explicit.

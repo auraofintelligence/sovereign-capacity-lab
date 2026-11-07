@@ -1,0 +1,634 @@
+{
+  "hero-overview": {
+    "key": "hero-overview",
+    "type": "generated",
+    "title": "Overview page concept",
+    "alt": "Concept of neighbours maintaining a civic robot beside shared computing racks in an Australian community workshop.",
+    "caption": "Neighbours maintaining a civic robot beside shared computing racks in an Australian community workshop.",
+    "creator": "Luke Nathan Hayes with OpenAI image generation",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": null,
+    "prompt": "Use case: stylized-concept. Wide cinematic photographic architectural concept image for the Sovereign Capacity Lab homepage. An Australian community workshop with a human-scale civic robot being maintained by two adult technicians, racks of modular computing in a glazed adjoining room, and a view over a coastal town with clean-energy infrastructure. Human ownership, practical capability and a welcoming public learning space. Realistic materials, warm daylight and copper details against deep green. Wide landscape image, clear composition, main visual interest toward the centre and right with calm darker negative space on the left suitable for website heading overlay. No text, logos, signs, flags or watermark. Present as a plausible future concept, not a real product photograph.",
+    "method": "Built-in image_gen",
+    "variants": [
+      {
+        "path": "assets/images/hero-overview-768.webp",
+        "width": 768,
+        "height": 384
+      },
+      {
+        "path": "assets/images/hero-overview-1280.webp",
+        "width": 1280,
+        "height": 640
+      },
+      {
+        "path": "assets/images/hero-overview-1774.webp",
+        "width": 1774,
+        "height": 887
+      }
+    ]
+  },
+  "hero-power": {
+    "key": "hero-power",
+    "type": "generated",
+    "title": "Power page concept",
+    "alt": "Concept of an Australian town supplied by solar arrays, wind turbines, a substation and transmission lines.",
+    "caption": "An Australian town supplied by solar arrays, wind turbines, a substation and transmission lines.",
+    "creator": "Luke Nathan Hayes with OpenAI image generation",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": null,
+    "prompt": "Use case: stylized-concept. Wide cinematic photorealistic editorial concept image for a clean electricity planning calculator. An Australian regional landscape at sunrise with photovoltaic arrays, distant wind turbines, a clearly visible electrical substation and transmission lines leading towards a town and industrial buildings. Show a complete practical electricity system supporting people and industry. Rich deep green and warm copper-gold sunlight, credible scale, no sci-fi beams. Panoramic composition with main subjects towards centre/right, quieter darker foreground left for a heading overlay. No words, logos, labels, signs or watermark.",
+    "method": "Built-in image_gen",
+    "variants": [
+      {
+        "path": "assets/images/hero-power-768.webp",
+        "width": 768,
+        "height": 384
+      },
+      {
+        "path": "assets/images/hero-power-1280.webp",
+        "width": 1280,
+        "height": 640
+      },
+      {
+        "path": "assets/images/hero-power-1774.webp",
+        "width": 1774,
+        "height": 887
+      }
+    ]
+  },
+  "hero-machines": {
+    "key": "hero-machines",
+    "type": "generated",
+    "title": "Machines page concept",
+    "alt": "Concept of a technician inspecting a modular robot joint beside replaceable components in a repair workshop.",
+    "caption": "A technician inspecting a modular robot joint beside replaceable components in a repair workshop.",
+    "creator": "Luke Nathan Hayes with OpenAI image generation",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": null,
+    "prompt": "Use case: stylized-concept. Wide photographic concept image of a repairable civic humanoid robot in a well-equipped Australian community repair workshop. The robot stands safely powered down beside a bench; a removed forearm module, a battery pack, bearings and simple hand tools lie neatly on the bench while an adult technician inspects a replaceable joint. Show repair, continuity and worn parts replacement, realistic practical engineering with subtle use marks. Warm copper highlights and deep green workshop shadows. Panoramic composition, key subject on centre/right, calm darker space left for a website heading. No text, brand marks, menacing military styling or watermark.",
+    "method": "Built-in image_gen",
+    "variants": [
+      {
+        "path": "assets/images/hero-machines-768.webp",
+        "width": 768,
+        "height": 384
+      },
+      {
+        "path": "assets/images/hero-machines-1280.webp",
+        "width": 1280,
+        "height": 640
+      },
+      {
+        "path": "assets/images/hero-machines-1774.webp",
+        "width": 1774,
+        "height": 887
+      }
+    ]
+  },
+  "hero-storage": {
+    "key": "hero-storage",
+    "type": "generated",
+    "title": "Storage page concept",
+    "alt": "Concept of battery storage cabinets, solar panels and a cutaway battery sample.",
+    "caption": "Battery storage cabinets, solar panels and a cutaway battery sample.",
+    "creator": "Luke Nathan Hayes with OpenAI image generation",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": null,
+    "prompt": "Use case: stylized-concept. Wide cinematic photorealistic concept image of solar and energy storage infrastructure: a close view of a neat battery energy storage installation with protected cabinets and power electronics, solar panels extending behind it under a late afternoon sky. A small cutaway-style laboratory battery cell sample on a foreground bench suggests chemistry and materials without false labels or glowing magical effects. Realistic metal and cable details, deep greens and copper sunset tones. Panoramic composition, main interest centre/right, quiet darker left for a website heading overlay. No text, logos or watermark.",
+    "method": "Built-in image_gen",
+    "variants": [
+      {
+        "path": "assets/images/hero-storage-768.webp",
+        "width": 768,
+        "height": 384
+      },
+      {
+        "path": "assets/images/hero-storage-1280.webp",
+        "width": 1280,
+        "height": 640
+      },
+      {
+        "path": "assets/images/hero-storage-1774.webp",
+        "width": 1774,
+        "height": 887
+      }
+    ]
+  },
+  "hero-matter": {
+    "key": "hero-matter",
+    "type": "generated",
+    "title": "Matter page concept",
+    "alt": "Concept of mineral specimens, refined copper and aluminium examined on a laboratory workbench.",
+    "caption": "Mineral specimens, refined copper and aluminium examined on a laboratory workbench.",
+    "creator": "Luke Nathan Hayes with OpenAI image generation",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": null,
+    "prompt": "Use case: stylized-concept. Wide editorial photographic concept image for atomic elements and feedstocks. A mineralogy laboratory workbench with distinct copper ore, reddish iron ore, pale bauxite and a translucent crystal specimen, beside small refined copper and aluminium ingots and a microscope. Tactile geology, useful material differences and careful laboratory examination, photographed in soft natural side light. Forest green shadows and warm copper highlights. Panoramic composition, richly detailed specimens centre/right and calm negative space left for a heading overlay. No text, labels, logos, magical effects or watermark.",
+    "method": "Built-in image_gen",
+    "variants": [
+      {
+        "path": "assets/images/hero-matter-768.webp",
+        "width": 768,
+        "height": 384
+      },
+      {
+        "path": "assets/images/hero-matter-1280.webp",
+        "width": 1280,
+        "height": 640
+      },
+      {
+        "path": "assets/images/hero-matter-1774.webp",
+        "width": 1774,
+        "height": 887
+      }
+    ]
+  },
+  "hero-ledger": {
+    "key": "hero-ledger",
+    "type": "generated",
+    "title": "Ledger page concept",
+    "alt": "Concept of a technician weighing copper cable beside aluminium sections, bearings, electronics and a battery module.",
+    "caption": "A technician weighing copper cable beside aluminium sections, bearings, electronics and a battery module.",
+    "creator": "Luke Nathan Hayes with OpenAI image generation",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": null,
+    "prompt": "Use case: stylized-concept. Wide photographic concept image of a practical engineering material inventory being checked. A clean industrial workbench with neatly arranged copper cable, aluminium extrusions, steel bearings, a solar cell wafer, circuit boards and an unbranded battery module, an adult technician using a digital scale and a plain notebook. The objects are distinct and physically credible, expressing a bill of materials. Deep green workshop background with copper and silver material highlights. Panoramic layout, subjects centre/right, quiet darker space left for a heading. No readable text, brand names, logos, charts or watermark.",
+    "method": "Built-in image_gen",
+    "variants": [
+      {
+        "path": "assets/images/hero-ledger-768.webp",
+        "width": 768,
+        "height": 384
+      },
+      {
+        "path": "assets/images/hero-ledger-1280.webp",
+        "width": 1280,
+        "height": 640
+      },
+      {
+        "path": "assets/images/hero-ledger-1774.webp",
+        "width": 1774,
+        "height": 887
+      }
+    ]
+  },
+  "hero-space": {
+    "key": "hero-space",
+    "type": "generated",
+    "title": "Space page concept",
+    "alt": "Concept of an orbital computing platform with separate solar arrays, computing equipment and radiator surfaces.",
+    "caption": "An orbital computing platform with separate solar arrays, computing equipment and radiator surfaces.",
+    "creator": "Luke Nathan Hayes with OpenAI image generation",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": null,
+    "prompt": "Use case: stylized-concept. Wide cinematic realistic space engineering concept image: an orbital computing platform above the curved Earth with separate blue solar arrays, a compact shielded computing section and large dark radiator surfaces. Credible modular spacecraft geometry, sunlight catching metal structures, Earth's blue atmospheric rim and deep black space. This is an explicitly conceptual future system, not a real operating satellite. Wide landscape frame with spacecraft centre/right and darker open space on the left for website title. Avoid fantasy lasers, unrealistic city-sized structures, logos, text and watermark.",
+    "method": "Built-in image_gen",
+    "variants": [
+      {
+        "path": "assets/images/hero-space-768.webp",
+        "width": 768,
+        "height": 384
+      },
+      {
+        "path": "assets/images/hero-space-1280.webp",
+        "width": 1280,
+        "height": 640
+      },
+      {
+        "path": "assets/images/hero-space-1774.webp",
+        "width": 1774,
+        "height": 887
+      }
+    ]
+  },
+  "hero-australia": {
+    "key": "hero-australia",
+    "type": "generated",
+    "title": "Australia page concept",
+    "alt": "Concept of a Brisbane riverside precinct with public workshops, rooftop solar and a small civic maintenance robot.",
+    "caption": "A brisbane riverside precinct with public workshops, rooftop solar and a small civic maintenance robot.",
+    "creator": "Luke Nathan Hayes with OpenAI image generation",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": null,
+    "prompt": "Use case: stylized-concept. Wide cinematic photorealistic architectural concept image of a future Brisbane riverside community technology precinct approaching 2032. A recognisable subtropical Australian city with a gently winding river, pedestrian and cycle access, shaded community learning and repair workshops, rooftop solar and a small civic robot supporting maintenance. People use the public space naturally. Optimistic practical local ownership and durable legacy, warm dawn copper light and forest green vegetation. Panoramic composition, urban detail centre/right, quieter darker foreground left for heading overlay. No Olympic rings, official Games branding, text, logos, signage or watermark.",
+    "method": "Built-in image_gen",
+    "variants": [
+      {
+        "path": "assets/images/hero-australia-768.webp",
+        "width": 768,
+        "height": 384
+      },
+      {
+        "path": "assets/images/hero-australia-1280.webp",
+        "width": 1280,
+        "height": 640
+      },
+      {
+        "path": "assets/images/hero-australia-1774.webp",
+        "width": 1774,
+        "height": 887
+      }
+    ]
+  },
+  "hero-report": {
+    "key": "hero-report",
+    "type": "generated",
+    "title": "Report page concept",
+    "alt": "Concept of a research desk overlooking ore handling at an industrial port.",
+    "caption": "A research desk overlooking ore handling at an industrial port.",
+    "creator": "Luke Nathan Hayes with OpenAI image generation",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": null,
+    "prompt": "Use case: stylized-concept. Wide editorial photographic concept image for a serious research paper about mining, materials and power. A desk beside a large window looking over a working industrial port with ore handling, cranes and distant clean power infrastructure. On the desk are a stack of unmarked research pages, a polished copper piece, an aluminium component and a caliper. Grounded Australian industrial scale, natural textures, deep green shadows and warm copper-gold afternoon light. Wide landscape, primary interest centre/right and quiet dark area left for website heading overlay. No readable text, labels, brands, logos or watermark.",
+    "method": "Built-in image_gen",
+    "variants": [
+      {
+        "path": "assets/images/hero-report-768.webp",
+        "width": 768,
+        "height": 393
+      },
+      {
+        "path": "assets/images/hero-report-1280.webp",
+        "width": 1280,
+        "height": 655
+      }
+    ]
+  },
+  "hero-sources": {
+    "key": "hero-sources",
+    "type": "generated",
+    "title": "Sources page concept",
+    "alt": "Concept of a scientific notebook, specimen, balance and microscope in a materials research library.",
+    "caption": "A scientific notebook, specimen, balance and microscope in a materials research library.",
+    "creator": "Luke Nathan Hayes with OpenAI image generation",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": null,
+    "prompt": "Use case: stylized-concept. Wide editorial photographic concept image about checking scientific evidence. A welcoming materials research library and laboratory, with an open unmarked technical notebook, a mineral specimen, a small precision balance and a microscope on a timber desk, shelves and glass-fronted material sample cabinets in the background. Realistic scientific practice, careful observation and accessible learning. Deep forest green and warm copper highlights. Panoramic image with key subject centre/right and quiet darker left for a website heading overlay. No readable lettering, logos, arbitrary equations, graphs or watermark.",
+    "method": "Built-in image_gen",
+    "variants": [
+      {
+        "path": "assets/images/hero-sources-768.webp",
+        "width": 768,
+        "height": 384
+      },
+      {
+        "path": "assets/images/hero-sources-1280.webp",
+        "width": 1280,
+        "height": 640
+      },
+      {
+        "path": "assets/images/hero-sources-1774.webp",
+        "width": 1774,
+        "height": 887
+      }
+    ]
+  },
+  "photo-pleiades": {
+    "key": "photo-pleiades",
+    "type": "photograph",
+    "title": "Pleiades supercomputer.jpg",
+    "alt": "Rows of Pleiades supercomputer cabinets at NASA Ames.",
+    "caption": "Historical Pleiades computer racks at NASA Ames. Computing runs inside a larger power, cooling and networking installation.",
+    "creator": "Marco Librero, NASA Ames Research Center",
+    "date": "8 October 2008",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/United_States#Works_by_the_US_government",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Pleiades_supercomputer.jpg",
+    "changes": "Resized and converted to WebP; no compositing or content changes.",
+    "variants": [
+      {
+        "path": "assets/images/photo-pleiades-768.webp",
+        "width": 768,
+        "height": 512
+      },
+      {
+        "path": "assets/images/photo-pleiades-1280.webp",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "path": "assets/images/photo-pleiades-1774.webp",
+        "width": 1774,
+        "height": 1183
+      }
+    ],
+    "original_date": "2008-10-08"
+  },
+  "photo-industrial-robots": {
+    "key": "photo-industrial-robots",
+    "type": "photograph",
+    "title": "FANUC Robot Assembly Demo.jpg",
+    "alt": "Yellow FANUC robot arms inside a vehicle assembly facility.",
+    "caption": "Industrial robot arms at a Tesla factory assembly demonstration in 2010. These arms illustrate the production machinery behind a growing robot fleet.",
+    "creator": "Steve Jurvetson",
+    "date": "27 October 2010",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:FANUC_Robot_Assembly_Demo.jpg",
+    "changes": "Resized and converted to WebP; no compositing or content changes.",
+    "variants": [
+      {
+        "path": "assets/images/photo-industrial-robots-768.webp",
+        "width": 768,
+        "height": 754
+      },
+      {
+        "path": "assets/images/photo-industrial-robots-1280.webp",
+        "width": 1280,
+        "height": 1256
+      },
+      {
+        "path": "assets/images/photo-industrial-robots-1774.webp",
+        "width": 1774,
+        "height": 1741
+      }
+    ],
+    "original_date": "2010-10-27 16:21:36"
+  },
+  "photo-optimus": {
+    "key": "photo-optimus",
+    "type": "photograph",
+    "title": "Latest Tesla Optimus Humanoid Robot.jpg",
+    "alt": "A Tesla Optimus humanoid robot at an October 2024 public event.",
+    "caption": "Tesla Optimus on display at the company's October 2024 event.",
+    "creator": "Steve Jurvetson",
+    "date": "10 October 2024",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Latest_Tesla_Optimus_Humanoid_Robot.jpg",
+    "changes": "Resized and converted to WebP; no compositing or content changes.",
+    "variants": [
+      {
+        "path": "assets/images/photo-optimus-768.webp",
+        "width": 768,
+        "height": 1118
+      },
+      {
+        "path": "assets/images/photo-optimus-1280.webp",
+        "width": 1280,
+        "height": 1863
+      },
+      {
+        "path": "assets/images/photo-optimus-1774.webp",
+        "width": 1774,
+        "height": 2583
+      }
+    ],
+    "original_date": "2024-10-10 21:57:35"
+  },
+  "photo-brisbane": {
+    "key": "photo-brisbane",
+    "type": "photograph",
+    "title": "View of Brisbane skyline from southbank.jpeg",
+    "alt": "Brisbane skyline and the river photographed from South Bank.",
+    "caption": "Brisbane viewed from South Bank. The 2032 horizon connects a growing city with long-term community infrastructure and skills.",
+    "creator": "Misaochan2",
+    "date": "28 June 2018",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:View_of_Brisbane_skyline_from_southbank.jpeg",
+    "changes": "Resized and converted to WebP; no compositing or content changes.",
+    "variants": [
+      {
+        "path": "assets/images/photo-brisbane-768.webp",
+        "width": 768,
+        "height": 576
+      },
+      {
+        "path": "assets/images/photo-brisbane-1280.webp",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "path": "assets/images/photo-brisbane-1774.webp",
+        "width": 1774,
+        "height": 1330
+      }
+    ],
+    "original_date": "2018-06-28 16:57:14"
+  },
+  "photo-solar-farm": {
+    "key": "photo-solar-farm",
+    "type": "photograph",
+    "title": "Willamsdale solar farm.jpg",
+    "alt": "Rows of photovoltaic panels at Williamsdale solar farm.",
+    "caption": "Solar arrays at Williamsdale. Their nameplate rating, annual output and dependable delivery are separate quantities in the power calculations.",
+    "creator": "Grahamec",
+    "date": "6 December 2017",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Willamsdale_solar_farm.jpg",
+    "changes": "Resized and converted to WebP; no compositing or content changes.",
+    "variants": [
+      {
+        "path": "assets/images/photo-solar-farm-768.webp",
+        "width": 768,
+        "height": 576
+      },
+      {
+        "path": "assets/images/photo-solar-farm-1280.webp",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "path": "assets/images/photo-solar-farm-1774.webp",
+        "width": 1774,
+        "height": 1330
+      }
+    ],
+    "original_date": "2017-12-06 15:20:31"
+  },
+  "photo-iss-arrays": {
+    "key": "photo-iss-arrays",
+    "type": "photograph",
+    "title": "International Space Station after undocking of STS-132.jpg",
+    "alt": "The International Space Station with large solar arrays above Earth.",
+    "caption": "The International Space Station photographed in May 2010. Solar arrays and heat-rejection hardware show two distinct jobs required by equipment operating in orbit.",
+    "creator": "NASA/Crew of STS-132",
+    "date": "23 May 2010",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/United_States#Works_by_the_US_government",
+    "source_url": "https://commons.wikimedia.org/wiki/File:International_Space_Station_after_undocking_of_STS-132.jpg",
+    "changes": "Resized and converted to WebP; no compositing or content changes.",
+    "variants": [
+      {
+        "path": "assets/images/photo-iss-arrays-768.webp",
+        "width": 768,
+        "height": 490
+      },
+      {
+        "path": "assets/images/photo-iss-arrays-1280.webp",
+        "width": 1280,
+        "height": 816
+      },
+      {
+        "path": "assets/images/photo-iss-arrays-1774.webp",
+        "width": 1774,
+        "height": 1131
+      }
+    ],
+    "original_date": "2010-05-23"
+  },
+  "photo-copper-mine": {
+    "key": "photo-copper-mine",
+    "type": "photograph",
+    "title": "Bingham Canyon mine 2007 - NASA Image.jpg",
+    "alt": "A terraced open-pit copper mine with surrounding infrastructure seen from orbit.",
+    "caption": "Bingham Canyon copper mine, photographed from orbit in 2007. Ore throughput includes much more rock than the refined metal ultimately delivered.",
+    "creator": "NASA",
+    "date": "20 September 2007",
+    "license": "Public domain",
+    "license_url": "https://commons.wikimedia.org/wiki/Commons:Copyright_rules_by_territory/United_States#Works_by_the_US_government",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bingham_Canyon_mine_2007_-_NASA_Image.jpg",
+    "changes": "Resized and converted to WebP; no compositing or content changes.",
+    "variants": [
+      {
+        "path": "assets/images/photo-copper-mine-768.webp",
+        "width": 768,
+        "height": 474
+      }
+    ],
+    "original_date": "2007-09-20"
+  },
+  "figure-production-fleet": {
+    "key": "figure-production-fleet",
+    "type": "figure",
+    "title": "Annual manufacture and accumulated equipment",
+    "alt": "Two plots show annual robot production reaching 409.6 million during 2036 and accumulated manufacture reaching about 1,052.5 million by that year.",
+    "caption": "The accelerated scenario makes 409.6 million new robots during 2036 and accumulates about 1.053 billion manufactured over 2027 to 2036. The operating fleet then deducts actual permanent retirements. Annual flow and accumulated equipment answer different questions.",
+    "creator": "Sovereign Capacity Lab calculations prepared for Luke Nathan Hayes",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": "data/figure-data.json",
+    "method": "Matplotlib from the stated scenario inputs",
+    "variants": [
+      {
+        "path": "assets/images/figure-production-fleet-768.webp",
+        "width": 768,
+        "height": 306
+      },
+      {
+        "path": "assets/images/figure-production-fleet-1280.webp",
+        "width": 1280,
+        "height": 509
+      },
+      {
+        "path": "assets/images/figure-production-fleet-1774.webp",
+        "width": 1774,
+        "height": 706
+      }
+    ]
+  },
+  "figure-repair-material": {
+    "key": "figure-repair-material",
+    "type": "figure",
+    "title": "Retain repair and renew",
+    "alt": "A stacked mass bar shows 42 kilograms retained, two kilograms supplied through reconditioning and sixteen kilograms of new modules in a sixty kilogram serviced robot.",
+    "caption": "In the worked overhaul, a 60 kg robot retains 42 kg. Its 18 kg module allowance can include 2 kg of reconditioned parts and 16 kg of newly supplied material. One million such jobs therefore need 16,000 tonnes of new modules while retaining 42,000 tonnes of equipment.",
+    "creator": "Sovereign Capacity Lab calculations prepared for Luke Nathan Hayes",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": "data/figure-data.json",
+    "method": "Matplotlib from the stated scenario inputs",
+    "variants": [
+      {
+        "path": "assets/images/figure-repair-material-768.webp",
+        "width": 768,
+        "height": 198
+      },
+      {
+        "path": "assets/images/figure-repair-material-1280.webp",
+        "width": 1280,
+        "height": 329
+      },
+      {
+        "path": "assets/images/figure-repair-material-1774.webp",
+        "width": 1774,
+        "height": 456
+      }
+    ]
+  },
+  "figure-day-storage": {
+    "key": "figure-day-storage",
+    "type": "figure",
+    "title": "Power during the day and stored energy overnight",
+    "alt": "The upper plot shows solar output peaking near midday against a constant one gigawatt load. The lower plot shows stored energy rising during daylight and falling overnight.",
+    "caption": "Illustrative repeated day: 6 GW of solar nameplate at 25 per cent capacity factor supplies a constant 1 GW load with 20 GWh of usable internal storage and 95 per cent efficiency in each direction. The plot separates instantaneous power from stored energy. Weather and seasonal adequacy need their own time series.",
+    "creator": "Sovereign Capacity Lab calculations prepared for Luke Nathan Hayes",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": "data/figure-data.json",
+    "method": "Matplotlib from the stated scenario inputs",
+    "variants": [
+      {
+        "path": "assets/images/figure-day-storage-768.webp",
+        "width": 768,
+        "height": 416
+      },
+      {
+        "path": "assets/images/figure-day-storage-1280.webp",
+        "width": 1280,
+        "height": 693
+      },
+      {
+        "path": "assets/images/figure-day-storage-1774.webp",
+        "width": 1774,
+        "height": 960
+      }
+    ]
+  },
+  "figure-compound-elements": {
+    "key": "figure-compound-elements",
+    "type": "figure",
+    "title": "The elements inside source compounds",
+    "alt": "Stacked mass bars show the different elemental shares in chalcopyrite, alumina and lithium iron phosphate. Copper is about 34.6 per cent of pure chalcopyrite and aluminium about 52.9 per cent of pure alumina.",
+    "caption": "Chemical composition supplies one conversion. Ore grade supplies another. Recovery supplies a third. The feedstock calculator applies all three, so a compound, an ore and refined metal remain separate quantities.",
+    "creator": "Sovereign Capacity Lab calculations prepared for Luke Nathan Hayes",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": "data/figure-data.json",
+    "method": "Matplotlib from the stated scenario inputs",
+    "variants": [
+      {
+        "path": "assets/images/figure-compound-elements-768.webp",
+        "width": 768,
+        "height": 294
+      },
+      {
+        "path": "assets/images/figure-compound-elements-1280.webp",
+        "width": 1280,
+        "height": 491
+      },
+      {
+        "path": "assets/images/figure-compound-elements-1774.webp",
+        "width": 1774,
+        "height": 680
+      }
+    ]
+  }
+}

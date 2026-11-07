@@ -1,0 +1,68 @@
+[
+  {
+    "key": "favicon",
+    "prompt": "Use case: logo-brand. Create a polished square website favicon for Sovereign Capacity Lab, part of Luke Nathan Hayes's Aura of Intelligence projects. A single bold emblem: three interwoven, continuous copper, pale gold and green bands enclosing a tiny luminous crystalline cube, suggesting reciprocal abundance, sovereign compute and matter. Matte deep forest green background, balanced symmetrical silhouette with generous clear space and strong readability when reduced to 16 pixels. Flat refined emblem with restrained material sheen, no lettering, no tiny lines, no border, no watermark. Square 1024 by 1024.",
+    "generated_on": "2026-11-07",
+    "method": "Built-in image_gen"
+  },
+  {
+    "key": "overview",
+    "prompt": "Use case: stylized-concept. Wide cinematic photographic architectural concept image for the Sovereign Capacity Lab homepage. An Australian community workshop with a human-scale civic robot being maintained by two adult technicians, racks of modular computing in a glazed adjoining room, and a view over a coastal town with clean-energy infrastructure. Human ownership, practical capability and a welcoming public learning space. Realistic materials, warm daylight and copper details against deep green. Wide landscape image, clear composition, main visual interest toward the centre and right with calm darker negative space on the left suitable for website heading overlay. No text, logos, signs, flags or watermark. Present as a plausible future concept, not a real product photograph.",
+    "generated_on": "2026-11-07",
+    "method": "Built-in image_gen"
+  },
+  {
+    "key": "power",
+    "prompt": "Use case: stylized-concept. Wide cinematic photorealistic editorial concept image for a clean electricity planning calculator. An Australian regional landscape at sunrise with photovoltaic arrays, distant wind turbines, a clearly visible electrical substation and transmission lines leading towards a town and industrial buildings. Show a complete practical electricity system supporting people and industry. Rich deep green and warm copper-gold sunlight, credible scale, no sci-fi beams. Panoramic composition with main subjects towards centre/right, quieter darker foreground left for a heading overlay. No words, logos, labels, signs or watermark.",
+    "generated_on": "2026-11-07",
+    "method": "Built-in image_gen"
+  },
+  {
+    "key": "machines",
+    "prompt": "Use case: stylized-concept. Wide photographic concept image of a repairable civic humanoid robot in a well-equipped Australian community repair workshop. The robot stands safely powered down beside a bench; a removed forearm module, a battery pack, bearings and simple hand tools lie neatly on the bench while an adult technician inspects a replaceable joint. Show repair, continuity and worn parts replacement, realistic practical engineering with subtle use marks. Warm copper highlights and deep green workshop shadows. Panoramic composition, key subject on centre/right, calm darker space left for a website heading. No text, brand marks, menacing military styling or watermark.",
+    "generated_on": "2026-11-07",
+    "method": "Built-in image_gen"
+  },
+  {
+    "key": "storage",
+    "prompt": "Use case: stylized-concept. Wide cinematic photorealistic concept image of solar and energy storage infrastructure: a close view of a neat battery energy storage installation with protected cabinets and power electronics, solar panels extending behind it under a late afternoon sky. A small cutaway-style laboratory battery cell sample on a foreground bench suggests chemistry and materials without false labels or glowing magical effects. Realistic metal and cable details, deep greens and copper sunset tones. Panoramic composition, main interest centre/right, quiet darker left for a website heading overlay. No text, logos or watermark.",
+    "generated_on": "2026-11-07",
+    "method": "Built-in image_gen"
+  },
+  {
+    "key": "matter",
+    "prompt": "Use case: stylized-concept. Wide editorial photographic concept image for atomic elements and feedstocks. A mineralogy laboratory workbench with distinct copper ore, reddish iron ore, pale bauxite and a translucent crystal specimen, beside small refined copper and aluminium ingots and a microscope. Tactile geology, useful material differences and careful laboratory examination, photographed in soft natural side light. Forest green shadows and warm copper highlights. Panoramic composition, richly detailed specimens centre/right and calm negative space left for a heading overlay. No text, labels, logos, magical effects or watermark.",
+    "generated_on": "2026-11-07",
+    "method": "Built-in image_gen"
+  },
+  {
+    "key": "ledger",
+    "prompt": "Use case: stylized-concept. Wide photographic concept image of a practical engineering material inventory being checked. A clean industrial workbench with neatly arranged copper cable, aluminium extrusions, steel bearings, a solar cell wafer, circuit boards and an unbranded battery module, an adult technician using a digital scale and a plain notebook. The objects are distinct and physically credible, expressing a bill of materials. Deep green workshop background with copper and silver material highlights. Panoramic layout, subjects centre/right, quiet darker space left for a heading. No readable text, brand names, logos, charts or watermark.",
+    "generated_on": "2026-11-07",
+    "method": "Built-in image_gen"
+  },
+  {
+    "key": "space",
+    "prompt": "Use case: stylized-concept. Wide cinematic realistic space engineering concept image: an orbital computing platform above the curved Earth with separate blue solar arrays, a compact shielded computing section and large dark radiator surfaces. Credible modular spacecraft geometry, sunlight catching metal structures, Earth's blue atmospheric rim and deep black space. This is an explicitly conceptual future system, not a real operating satellite. Wide landscape frame with spacecraft centre/right and darker open space on the left for website title. Avoid fantasy lasers, unrealistic city-sized structures, logos, text and watermark.",
+    "generated_on": "2026-11-07",
+    "method": "Built-in image_gen"
+  },
+  {
+    "key": "australia",
+    "prompt": "Use case: stylized-concept. Wide cinematic photorealistic architectural concept image of a future Brisbane riverside community technology precinct approaching 2032. A recognisable subtropical Australian city with a gently winding river, pedestrian and cycle access, shaded community learning and repair workshops, rooftop solar and a small civic robot supporting maintenance. People use the public space naturally. Optimistic practical local ownership and durable legacy, warm dawn copper light and forest green vegetation. Panoramic composition, urban detail centre/right, quieter darker foreground left for heading overlay. No Olympic rings, official Games branding, text, logos, signage or watermark.",
+    "generated_on": "2026-11-07",
+    "method": "Built-in image_gen"
+  },
+  {
+    "key": "report",
+    "prompt": "Use case: stylized-concept. Wide editorial photographic concept image for a serious research paper about mining, materials and power. A desk beside a large window looking over a working industrial port with ore handling, cranes and distant clean power infrastructure. On the desk are a stack of unmarked research pages, a polished copper piece, an aluminium component and a caliper. Grounded Australian industrial scale, natural textures, deep green shadows and warm copper-gold afternoon light. Wide landscape, primary interest centre/right and quiet dark area left for website heading overlay. No readable text, labels, brands, logos or watermark.",
+    "generated_on": "2026-11-07",
+    "method": "Built-in image_gen"
+  },
+  {
+    "key": "sources",
+    "prompt": "Use case: stylized-concept. Wide editorial photographic concept image about checking scientific evidence. A welcoming materials research library and laboratory, with an open unmarked technical notebook, a mineral specimen, a small precision balance and a microscope on a timber desk, shelves and glass-fronted material sample cabinets in the background. Realistic scientific practice, careful observation and accessible learning. Deep forest green and warm copper highlights. Panoramic image with key subject centre/right and quiet darker left for a website heading overlay. No readable lettering, logos, arbitrary equations, graphs or watermark.",
+    "generated_on": "2026-11-07",
+    "method": "Built-in image_gen"
+  }
+]
