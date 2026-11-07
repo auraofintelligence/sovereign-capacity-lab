@@ -1,0 +1,14 @@
+{
+  "date": "7 November 2026",
+  "brief": {
+    "quandamooka_city_people": 20000000,
+    "australian_population_scenario_minimum": 100000000,
+    "target_year": 2045,
+    "global_scope": true,
+    "early_activation": "Useful housing transport clean energy water local industry repair and social capacity",
+    "historical_documents": "Thought experiments and earlier LLM responses, not adopted specifications"
+  },
+  "source_register": "sources.json",
+  "model": "../assets/city2045.mjs",
+  "caveat": "Excavation volume, fitted structures and functioning life support have separate delivery requirements."
+}

@@ -2,6 +2,7 @@ from pathlib import Path
 import html, json, re, shutil
 from experience import render, examples, credits, licence, figure, REPORT_INSERTS
 from opportunity import opportunity_intro, opportunity_body
+from cities import cities_content
 
 ROOT=Path(__file__).resolve().parent
 WORK=ROOT/'data'
@@ -25,6 +26,7 @@ pages=[
  ('space.html','space','Space infrastructure','Orbital power mass and transport','Size on-board generation, heat rejection, payload transport and power delivered to other users.'),
  ('australia.html','australia','Australia and 2032','Australian capability before and beyond 2032','Connect population growth, domestic industry, civic robots, sovereign compute and global exports.'),
  ('manufacture-australia.html','opportunity','Australian manufacturing','Build robots in Australia','Manufacture civic robots for Australian communities and export. Size the factories, costs, supply chains and locally governed capability.'),
+ ('cities-2045.html','cities','Cities for 2045','Build useful cities and deeper resilience by 2045','Explore the 20 million person Quandamooka design, Australian capacity for 100 million and the mineral processing needed for a larger robot industry.'),
  ('report.html','report','Read the paper','Mining materials and power','Read the integrated research paper with dated references and download the Word version.'),
  ('sources.html','sources','Sources and methods','Evidence assumptions and reproducible methods','Inspect the dated sources, the calculation boundaries and the relationships between the projects.'),
 ]
@@ -79,7 +81,8 @@ for filename,key,nav,title,desc in pages:
  if iscalc:content+=toolbar+'<noscript><p>Calculators need JavaScript. The <a href="report.html">complete paper</a> and <a href="sources.html">dated sources and methods</a> can be read without it.</p></noscript><div id="calculator"></div>'+examples(key)
  if key=='overview':content+=routes+connections
  if key=='australia':content+='<p class="prose"><a class="button" href="manufacture-australia.html">Build robots in Australia for domestic use and export</a></p>'+connections
- if key=='opportunity':content+=opportunity_body(prose_line)
+ if key=='opportunity':content+='<p class="prose"><a class="button" href="cities-2045.html">Size the 20 million person city and the 2045 national programme</a></p>'+opportunity_body(prose_line)
+ if key=='cities':content+=cities_content(prose_line)
  if key=='report':content+=report
  if key=='sources':content+=method+connections+register
  if key=='visuals':content+=credits()

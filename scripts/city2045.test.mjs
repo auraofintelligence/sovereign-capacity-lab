@@ -1,0 +1,13 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {city2045,cityDefaults as d} from '../assets/city2045.mjs';
+const close=(a,b)=>assert.ok(Math.abs(a-b)<Math.max(1,Math.abs(b))*1e-9,`${a} ${b}`);
+test('the city and national volume targets close without a fixed growth cap',()=>{for(const people of [2e7,1e8,1e10]){let r=city2045({...d,people});close(r.rows.at(-1).cumulative,people*300);assert.equal(r.rows.length,19);assert.ok(r.growth>1);}});
+test('faster first production reduces the growth requirement',()=>{assert.ok(city2045({...d,firstM3:1e8}).growth<city2045(d).growth);});
+test('a single construction year delivers the selected volume without a solver loop',()=>{let r=city2045({...d,end:2027});assert.equal(r.rows.length,1);close(r.rows[0].annual,6e9);});
+test('a front loaded construction plan can decline and still close',()=>{let r=city2045({...d,firstM3:1e9});assert.ok(r.growth<1);close(r.first,1e9);close(r.rows.at(-1).cumulative,6e9);});
+test('water makeup follows loss rather than total circulation',()=>{const a=city2045(d),b=city2045({...d,waterRecovery:.99});close(a.waterGL,1460);close(a.makeupGL,7.3);close(b.makeupGL,14.6);});
+test('food electricity conversion and heat do not count metabolism twice',()=>{const a=city2045(d);close(a.foodGW,48.425925925925924);close(a.heatGW,a.powerGW);const b=city2045({...d,foodInternal:0});close(b.powerGW,20);assert.ok(b.heatGW>20);});
+test('three independent metal budgets bind at the smallest allowance',()=>{const a=city2045(d);close(a.metalOnlyRobots,433500*.1*.95*1000/6);assert.equal(a.metals.find(x=>x.element==='Cu').need,1e8*6/1000/.95);});
+test('unallocated metal gives zero robots and no invented national total',()=>{const a=city2045({...d,metalShare:0});assert.equal(a.metalOnlyRobots,0);assert.ok(a.metals.every(x=>x.requiredTotal===null));});
+test('invalid years and impossible recoveries are rejected',()=>{for(const inputs of [{end:2020},{start:2027.5,end:2045.5},{waterRecovery:1.01},{foodEfficiency:0},{people:-1}])assert.throws(()=>city2045({...d,...inputs}));});

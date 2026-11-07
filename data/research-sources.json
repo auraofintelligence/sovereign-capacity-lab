@@ -666,5 +666,59 @@
     "date": "7 November 2026; explicit factory and production assumptions",
     "title": "Build robots in Australia for domestic use and export",
     "url": "https://auraofintelligence.github.io/sovereign-capacity-lab/manufacture-australia.html"
+  },
+  "grain-documentary-mission": {
+    "org": "Luke Nathan Hayes",
+    "date": "Public design history checked 7 November 2026",
+    "title": "Grain by Grain generation city mission",
+    "url": "https://auraofintelligence.github.io/grain-by-grain-documentary/mission.html"
+  },
+  "aura-subterranean": {
+    "org": "Aura of Intelligence Luke Nathan Hayes",
+    "date": "Public design brief checked 7 November 2026",
+    "title": "Subterranean Eco Cities worldwide scope",
+    "url": "https://auraofintelligence.github.io/subterranean-cities.html"
+  },
+  "civilisation-city": {
+    "org": "Civilisation of Sand Luke Nathan Hayes",
+    "date": "Public design workbench checked 7 November 2026",
+    "title": "The subterranean city thought experiment",
+    "url": "https://auraofintelligence.github.io/civilisation-of-sand/subterranean-city.html"
+  },
+  "micronova-building": {
+    "org": "Micronova and Excursions Luke Nathan Hayes",
+    "date": "Public design history checked 7 November 2026",
+    "title": "What is being built",
+    "url": "https://auraofintelligence.github.io/micronova-and-excursions/building.html"
+  },
+  "population-march-2026": {
+    "org": "Australian Bureau of Statistics",
+    "date": "17 September 2026 release for 31 March 2026",
+    "title": "National state and territory population March 2026",
+    "url": "https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/mar-2026"
+  },
+  "usgs-au-processing": {
+    "org": "US Geological Survey",
+    "date": "Australian production through 2024 with data available through 24 March 2026",
+    "title": "Australia production table including copper processing",
+    "url": "https://www.usgs.gov/centers/national-minerals-information-center/australia"
+  },
+  "steel-output-2025": {
+    "org": "World Steel Association",
+    "date": "2025 annual data updated 28 July 2026 and checked 7 November 2026",
+    "title": "Australian crude steel annual production",
+    "url": "https://worldsteel.org/data/annual-production-steel-data/?ind=P1_crude_steel_total_pub%2FAUS"
+  },
+  "cities-calculator": {
+    "org": "Sovereign Capacity Lab prepared for Luke Nathan Hayes",
+    "date": "7 November 2026 requirement tests",
+    "title": "Cities for 2045 volume loops power and material calculator",
+    "url": "https://auraofintelligence.github.io/sovereign-capacity-lab/cities-2045.html"
+  },
+  "aac": {
+    "org": "Australian Aluminium Council",
+    "date": "2025 production figures on corporate industry page checked 7 November 2026",
+    "title": "Australian aluminium industry production",
+    "url": "https://aluminium.org.au/australian-industry/australian-aluminium-industry/"
   }
 }

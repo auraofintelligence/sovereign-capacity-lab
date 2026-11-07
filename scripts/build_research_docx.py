@@ -31,7 +31,7 @@ for name in ['Heading 1','Heading 2']:doc.styles[name].font.bold=True
 for s in doc.styles:
  for b in list(s.element.iter(qn('w:pBdr'))):b.getparent().remove(b)
 rs=doc.styles.add_style('Reference entry',1);rs.base_style=n;rs.font.size=Pt(11)
-rs.paragraph_format.line_spacing=1.1;rs.paragraph_format.space_after=Pt(5);rs.paragraph_format.keep_together=True
+rs.paragraph_format.line_spacing=1.1;rs.paragraph_format.space_after=Pt(4);rs.paragraph_format.keep_together=True
 su=doc.styles.add_style('Summary body',1);su.base_style=n;su.paragraph_format.line_spacing=1.08;su.paragraph_format.space_after=Pt(6)
 props=doc.core_properties;props.title='Mining materials and power for the Super Intelligence buildout'
 props.subject='Growing industrial demand automation longevity and Australian domestic and export opportunities'
@@ -97,6 +97,6 @@ with zipfile.ZipFile(OUT) as z:
  assert '\u2014' not in alltext
  assert not re.search(r'\{[a-z0-9-]+\||\{\{|\brobyn?\b|\brobin\b',alltext,re.I)
  assert len(x.findall('.//'+qn('w:hyperlink')))==len(links)
-audit=dict(path=str(OUT),body_words=len(' '.join(texts).split()),source_count=len(used),hyperlinks=len(links),em_dashes=alltext.count('\u2014'),used_sources=used,links=links)
+audit=dict(path='documents/'+OUT.name,body_words=len(' '.join(texts).split()),source_count=len(used),hyperlinks=len(links),em_dashes=alltext.count('\u2014'),used_sources=used,links=links)
 (ROOT/'data/research-word-audit.json').write_text(json.dumps(audit,indent=2),encoding='utf-8')
 print(json.dumps({k:v for k,v in audit.items() if k not in ['links','used_sources']},indent=2))

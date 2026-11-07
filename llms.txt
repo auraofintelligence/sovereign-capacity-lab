@@ -11,6 +11,7 @@ Research and default assumptions dated 7 November 2026. Local scenario tools for
 - [Space infrastructure](https://auraofintelligence.github.io/sovereign-capacity-lab/space.html): Size on-board generation, heat rejection, payload transport and power delivered to other users.
 - [Australia and 2032](https://auraofintelligence.github.io/sovereign-capacity-lab/australia.html): Connect population growth, domestic industry, civic robots, sovereign compute and global exports.
 - [Australian manufacturing](https://auraofintelligence.github.io/sovereign-capacity-lab/manufacture-australia.html): Manufacture civic robots for Australian communities and export. Size the factories, costs, supply chains and locally governed capability.
+- [Cities for 2045](https://auraofintelligence.github.io/sovereign-capacity-lab/cities-2045.html): Explore the 20 million person Quandamooka design, Australian capacity for 100 million and the mineral processing needed for a larger robot industry.
 - [Read the paper](https://auraofintelligence.github.io/sovereign-capacity-lab/report.html): Read the integrated research paper with dated references and download the Word version.
 - [Sources and methods](https://auraofintelligence.github.io/sovereign-capacity-lab/sources.html): Inspect the dated sources, the calculation boundaries and the relationships between the projects.
 - [Image credits](https://auraofintelligence.github.io/sovereign-capacity-lab/visuals.html): Check image dates, original sources, reuse licences and exact generation prompts.

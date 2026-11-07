@@ -1,0 +1,987 @@
+{
+  "path": "documents/Mining_Materials_Power_and_Australian_Manufacturing_2026-11-07.docx",
+  "body_words": 15997,
+  "source_count": 96,
+  "hyperlinks": 220,
+  "em_dashes": 0,
+  "used_sources": [
+    "musk-fleet",
+    "sp-demand",
+    "ga2026",
+    "al-demand",
+    "aluminum",
+    "lynas",
+    "iluka",
+    "nolans",
+    "iea",
+    "aus-power",
+    "aemo-pipeline",
+    "us-queue",
+    "irena2026",
+    "nuclear2026",
+    "spacex",
+    "cities-calculator",
+    "grain-documentary-mission",
+    "train",
+    "g1",
+    "apollo",
+    "cru-materials",
+    "cru",
+    "duke",
+    "usgs",
+    "australian-al",
+    "tomago",
+    "sdg-agenda",
+    "sdg-2026",
+    "copper",
+    "density-cu",
+    "density-al",
+    "ntc",
+    "cars",
+    "ukcars",
+    "waymo-safety",
+    "fanuc",
+    "abb",
+    "microsoft-reuse",
+    "h1",
+    "hpe",
+    "nvidia",
+    "uk-queue",
+    "nrc",
+    "fusion-grid",
+    "amazon-nuclear",
+    "us-emergency",
+    "eu-power",
+    "china-power",
+    "india-power",
+    "africa-power",
+    "cis",
+    "renewables2026",
+    "world-electricity",
+    "terafab",
+    "solar",
+    "azur",
+    "japan-beam",
+    "aquila",
+    "caltech-beam",
+    "nolansfid",
+    "rarechain",
+    "niron",
+    "moog",
+    "atomic",
+    "gnome",
+    "alab",
+    "bhpai",
+    "nuton",
+    "fair-go-public",
+    "gajra",
+    "aura-subterranean",
+    "civilisation-city",
+    "micronova-building",
+    "population-march-2026",
+    "usgs-au-processing",
+    "aac",
+    "steel-output-2025",
+    "aus-population",
+    "aus-pop-actual",
+    "housing-2026",
+    "esoo-2026",
+    "swarmfarm-cefc",
+    "luminous-arena-2026",
+    "robotics-strategy",
+    "qld-manufacturing-hubs",
+    "tesla-robot-q1-2026",
+    "tesla-robot-q3-2026",
+    "tesla-texas-area",
+    "tesla-observer-nov",
+    "rlb-industrial-2026",
+    "amazon-qld-2026",
+    "aus-export-2026",
+    "au-manufacturing-page",
+    "fairgo",
+    "p4a",
+    "protopian"
+  ],
+  "links": [
+    {
+      "label": "Musk's September 2026 prediction of more than a billion operating within ten years",
+      "url": "https://elonmuskarchive.org/video/g20-innovation-ministerial-2026"
+    },
+    {
+      "label": "Dated market outlook",
+      "url": "https://www.spglobal.com/content/dam/spglobal/global-assets/en/special-reports/copper-in-the-age-of-ai/Copper%20in%20the%20Age%20of%20AI_January%202026.pdf"
+    },
+    {
+      "label": "Australian production",
+      "url": "https://www.ga.gov.au/scientific-topics/minerals/aimr/2026-preliminary-tables"
+    },
+    {
+      "label": "Market and supply outlook",
+      "url": "https://www.mckinsey.com/industries/metals-and-mining/our-insights/cleaning-up-mixed-scrap-decarbonizing-aluminum-through-circularity"
+    },
+    {
+      "label": "USGS benchmarks",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-aluminum.pdf"
+    },
+    {
+      "label": "August 2026 operating output",
+      "url": "https://financialfilings.com/filings/lynas-rare-earths-limited/annual-report/2026/57561152/"
+    },
+    {
+      "label": "Iluka November 2026",
+      "url": "https://www.iluka.com/media/gw1fcmzh/2nov26-eneabba-rare-earths-refinery-investor-site-visit.pdf"
+    },
+    {
+      "label": "Nolans plans",
+      "url": "https://resourcingtheterritory.nt.gov.au/minerals/mines-and-projects/developing-projects"
+    },
+    {
+      "label": "International Energy Agency April 2026 estimate",
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+    },
+    {
+      "label": "Australian 2026 statistics",
+      "url": "https://www.energy.gov.au/publications/australian-energy-statistics-table-o-electricity-generation-fuel-type-2024-25-and-2025"
+    },
+    {
+      "label": "AEMO October 2026",
+      "url": "https://www.aemo.com.au/newsroom/media-release/battery-projects-drive-record-nem-connections-pipeline"
+    },
+    {
+      "label": "Berkeley Lab June 2026",
+      "url": "https://emp.lbl.gov/queues"
+    },
+    {
+      "label": "IRENA March 2026",
+      "url": "https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026"
+    },
+    {
+      "label": "IEA nuclear construction",
+      "url": "https://www.iea.org/reports/global-energy-review-2026/technology-nuclear"
+    },
+    {
+      "label": "updated mineral production",
+      "url": "https://www.ga.gov.au/scientific-topics/minerals/aimr/2026-preliminary-tables"
+    },
+    {
+      "label": "SpaceX June 2026 ambition",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+    },
+    {
+      "label": "2045 calculations",
+      "url": "https://auraofintelligence.github.io/sovereign-capacity-lab/cities-2045.html"
+    },
+    {
+      "label": "generation city design",
+      "url": "https://auraofintelligence.github.io/grain-by-grain-documentary/mission.html"
+    },
+    {
+      "label": "13 July 2018 report of its first autonomous Pilbara delivery",
+      "url": "https://www.riotinto.com/en/news/releases/2018/first-autohaul-delivery"
+    },
+    {
+      "label": "1 September 2026 prediction",
+      "url": "https://elonmuskarchive.org/video/g20-innovation-ministerial-2026"
+    },
+    {
+      "label": "Unitree G1 page checked on 6 November 2026",
+      "url": "https://www.unitree.com/operate/g1/"
+    },
+    {
+      "label": "Apptronik's 2023 Apollo specifications",
+      "url": "https://apptronik.com/news-collection/apptronik-unveils-apollo"
+    },
+    {
+      "label": "2025 component analysis",
+      "url": "https://www.crugroup.com/en/communities/thought-leadership/2025/the-next-commodity-battleground-humanoid-robots/"
+    },
+    {
+      "label": "2026 magnet analysis",
+      "url": "https://www.crugroup.com/en/communities/thought-leadership/2026/humanoid-robots-can-widen-the-projected-rare-earth-supply-deficit/"
+    },
+    {
+      "label": "Duke Humanoid V2 public bill of materials dated 19 September 2026",
+      "url": "https://generalroboticslab.github.io/Duke_Humanoid_V2_OpenSource/bom/"
+    },
+    {
+      "label": "Geoscience Australia's preliminary tables updated on 12 October 2026",
+      "url": "https://www.ga.gov.au/scientific-topics/minerals/aimr/2026-preliminary-tables"
+    },
+    {
+      "label": "US Geological Survey's 2026 compilation",
+      "url": "https://pubs.usgs.gov/publication/mcs2026"
+    },
+    {
+      "label": "Australian Aluminium Council's 2025 production figure",
+      "url": "https://aluminium.org.au/australian-industry/australian-aluminium/"
+    },
+    {
+      "label": "Tomago's company description checked on 7 November 2026",
+      "url": "https://www.tomago.com.au/our-story/"
+    },
+    {
+      "label": "United Nations 2030 Agenda, adopted on 25 September 2015",
+      "url": "https://sdgs.un.org/2030agenda"
+    },
+    {
+      "label": "UN's 7 July 2026 progress report",
+      "url": "https://unstats.un.org/sdgs/report/2026/"
+    },
+    {
+      "label": "8 January 2026 copper study",
+      "url": "https://www.spglobal.com/content/dam/spglobal/global-assets/en/special-reports/copper-in-the-age-of-ai/Copper%20in%20the%20Age%20of%20AI_January%202026.pdf"
+    },
+    {
+      "label": "USGS 2026 production estimates",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-copper.pdf"
+    },
+    {
+      "label": "12 October 2026 Australian production tables",
+      "url": "https://www.ga.gov.au/scientific-topics/minerals/aimr/2026-preliminary-tables"
+    },
+    {
+      "label": "24 July 2025 aluminium outlook",
+      "url": "https://www.mckinsey.com/industries/metals-and-mining/our-insights/cleaning-up-mixed-scrap-decarbonizing-aluminum-through-circularity"
+    },
+    {
+      "label": "Australian 2025 output",
+      "url": "https://aluminium.org.au/australian-industry/australian-aluminium/"
+    },
+    {
+      "label": "Tomago scale checked 7 November 2026",
+      "url": "https://www.tomago.com.au/our-story/"
+    },
+    {
+      "label": "USGS 2026 aluminium estimates",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-aluminum.pdf"
+    },
+    {
+      "label": "Geoscience Australia's copper density of 8.96 tonnes per cubic metre",
+      "url": "https://www.ga.gov.au/education/minerals-energy/australian-mineral-facts/copper"
+    },
+    {
+      "label": "Geoscience Australia's aluminium density of 2.7 tonnes per cubic metre",
+      "url": "https://www.ga.gov.au/education/minerals-energy/australian-mineral-facts/aluminium"
+    },
+    {
+      "label": "National Transport Commission's report using January 2025 registrations",
+      "url": "https://www.ntc.gov.au/news/ntcs-new-report-finds-hybrids-rise-australians-switch-petrol-only"
+    },
+    {
+      "label": "Greene and Leard's March 2023 research review",
+      "url": "https://baker.utk.edu/wp-content/uploads/2023/03/Formatted-Vehicle-Scrappage-and-Survival_Single-Column_7Mar23.pdf"
+    },
+    {
+      "label": "UK research reported on 24 January 2025",
+      "url": "https://www.birmingham.ac.uk/news/2025/battery-powered-electric-vehicles-now-match-petrol-and-diesel-counterparts-for-longevity"
+    },
+    {
+      "label": "24 September 2026 update",
+      "url": "https://waymo.com/blog/shorts/safetydata-september26/"
+    },
+    {
+      "label": "service report checked on 6 November 2026",
+      "url": "https://www.fanuc.co.jp/en/sustainability/social/customers/service.html"
+    },
+    {
+      "label": "robot remanufacturing procedure checked on the same date",
+      "url": "https://www.abb.com/global/en/areas/robotics/services/remanufacturing-and-workshop-repair/remanufactured-robots"
+    },
+    {
+      "label": "on 17 April 2025",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/04/17/sustainable-by-design-innovating-for-zero-waste/"
+    },
+    {
+      "label": "Unitree H1 specifications checked on 6 November 2026",
+      "url": "https://www.unitree.com/h1/"
+    },
+    {
+      "label": "Apptronik's 2023 Apollo announcement",
+      "url": "https://apptronik.com/news-collection/apptronik-unveils-apollo"
+    },
+    {
+      "label": "IEA's 16 April 2026 computing-energy outlook",
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+    },
+    {
+      "label": "Australian Government's 2026 electricity statistics",
+      "url": "https://www.energy.gov.au/publications/australian-energy-statistics-table-o-electricity-generation-fuel-type-2024-25-and-2025"
+    },
+    {
+      "label": "HPE rack specifications checked on 5 November 2026",
+      "url": "https://www.hpe.com/ae/en/collaterals/collateral.a50009224enw.html"
+    },
+    {
+      "label": "NVIDIA GB200 hardware documentation checked that day",
+      "url": "https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html"
+    },
+    {
+      "label": "Geoscience Australia's updated basis",
+      "url": "https://www.ga.gov.au/scientific-topics/minerals/aimr/2026-preliminary-tables"
+    },
+    {
+      "label": "Australian Energy Market Operator's 21 October 2026 connections update",
+      "url": "https://www.aemo.com.au/newsroom/media-release/battery-projects-drive-record-nem-connections-pipeline"
+    },
+    {
+      "label": "Berkeley Lab's June 2026 queue study",
+      "url": "https://emp.lbl.gov/queues"
+    },
+    {
+      "label": "December 2025 connections reform announcement",
+      "url": "https://www.neso.energy/news/unveiling-new-project-pipeline-deliver-clean-power-2030"
+    },
+    {
+      "label": "US Nuclear Regulatory Commission's 2026 licensing record",
+      "url": "https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/highlights/2026"
+    },
+    {
+      "label": "28 April 2026 announcement",
+      "url": "https://www.cfs.energy/news-and-media/commonwealth-fusion-systems-becomes-first-fusion-company-to-apply-to-pjm-interconnection-the-largest-u.s.-wholesale-electricity-market"
+    },
+    {
+      "label": "October 2026 Indiana announcement",
+      "url": "https://www.aboutamazon.com/news/sustainability/amazon-nuclear-energy-indiana-x-energy-aep"
+    },
+    {
+      "label": "20 April 2026 energy-infrastructure determination",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/04/presidential-determination-pursuant-to-section-303-of-the-defense-production-act-of-1950-as-amended-on-development-manufacturing-and-deployment-of-large-scale-energy-and-energy-related-inf/"
+    },
+    {
+      "label": "AccelerateEU programme of 22 April and electrification plan of 17 July 2026",
+      "url": "https://energy.ec.europa.eu/strategy/accelerateeu-strengthen-eu-energy-resilience_en"
+    },
+    {
+      "label": "23 July 2026 renewable-energy plan",
+      "url": "https://english.www.gov.cn/news/202607/23/content_WS6a617ed3c6d00ca5f9a0c5e8.html"
+    },
+    {
+      "label": "9 August 2026 statement",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782&lang=1&reg=1"
+    },
+    {
+      "label": "Mission 300 update of 16 June 2026",
+      "url": "https://www.worldbank.org/en/news/press-release/2026/06/16/under-mission-300-a-new-way-of-doing-business-connects-over-50-million-people-to-electricity-across-africa"
+    },
+    {
+      "label": "Capacity Investment Scheme, updated on 24 June 2026",
+      "url": "https://www.dcceew.gov.au/energy/renewable/capacity-investment-scheme"
+    },
+    {
+      "label": "IRENA's March 2026 statistics",
+      "url": "https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026"
+    },
+    {
+      "label": "IEA's Global Energy Review 2026",
+      "url": "https://www.iea.org/reports/global-energy-review-2026/technology-nuclear"
+    },
+    {
+      "label": "IEA's Renewables 2026 outlook, checked on 7 November",
+      "url": "https://www.iea.org/reports/renewables-2026/renewable-electricity"
+    },
+    {
+      "label": "IEA's February 2026 electricity outlook",
+      "url": "https://www.iea.org/reports/electricity-2026/executive-summary"
+    },
+    {
+      "label": "SpaceX prospectus of 11 June 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+    },
+    {
+      "label": "Terafab programme checked on 7 November 2026",
+      "url": "https://terafab.ai/"
+    },
+    {
+      "label": "solar irradiance reference checked on 5 November 2026",
+      "url": "https://earth.gsfc.nasa.gov/climate/projects/solar-irradiance/science"
+    },
+    {
+      "label": "AZUR SPACE product information checked on 5 November 2026",
+      "url": "https://www.azurspace.com/en/products/space-products/"
+    },
+    {
+      "label": "Japan Space Systems' report of 13 December 2024",
+      "url": "https://www.jspacesystems.or.jp/en/news/4968.html"
+    },
+    {
+      "label": "Aquila project record checked on 7 November 2026",
+      "url": "https://aquila.space/"
+    },
+    {
+      "label": "1 June 2023 report on its MAPLE experiment",
+      "url": "https://www.caltech.edu/about/news/in-a-first-caltechs-space-solar-power-demonstrator-wirelessly-transmits-power-in-space"
+    },
+    {
+      "label": "26 August 2026 annual report",
+      "url": "https://financialfilings.com/filings/lynas-rare-earths-limited/annual-report/2026/57561152/"
+    },
+    {
+      "label": "2 November 2026 Eneabba update",
+      "url": "https://www.iluka.com/media/gw1fcmzh/2nov26-eneabba-rare-earths-refinery-investor-site-visit.pdf"
+    },
+    {
+      "label": "21 May 2026 Nolans announcement",
+      "url": "https://territorycoordinator.nt.gov.au/news-and-insights/nts-critical-minerals-future-unlocked-as-arafura-reaches-fid"
+    },
+    {
+      "label": "project register checked on 5 November 2026",
+      "url": "https://resourcingtheterritory.nt.gov.au/minerals/mines-and-projects/developing-projects"
+    },
+    {
+      "label": "IEA's 2026 rare earth supply-chain report",
+      "url": "https://www.iea.org/reports/rare-earth-elements/executive-summary"
+    },
+    {
+      "label": "10 September 2026 Sartell announcement",
+      "url": "https://nironmagnetics.com/niron-magnetics-marks-steel-raising-at-sartell-manufacturing-site/"
+    },
+    {
+      "label": "Moog and Niron announcement of 2 October 2026",
+      "url": "https://nironmagnetics.com/moog-and-niron-magnetics-to-showcase-rare-earth-free-motor-technology-at-ausa-2026/"
+    },
+    {
+      "label": "2024 atomic-weight table checked on 5 November 2026",
+      "url": "https://www.ciaaw.org/abridged-atomic-weights.htm"
+    },
+    {
+      "label": "GNoME announcement of 29 November 2023",
+      "url": "https://deepmind.google/blog/millions-of-new-materials-discovered-with-deep-learning/"
+    },
+    {
+      "label": "autonomous synthesis research published that day",
+      "url": "https://www.nature.com/articles/s41586-023-06734-w"
+    },
+    {
+      "label": "BHP and Microsoft's 30 May 2023 announcement",
+      "url": "https://www.bhp.com/news/media-centre/releases/2023/05/bhp-and-microsoft-use-ai-to-lift-escondida-copper-recovery"
+    },
+    {
+      "label": "15 January 2026 Nuton announcement",
+      "url": "https://www.riotinto.com/news/releases/2026/rio-tinto-and-amazon-web-services-collaborate-to-bring-low-carbon-nuton-copper-to-u-s--data-centres"
+    },
+    {
+      "label": "The public Australian installation proposal",
+      "url": "https://auraofintelligence.github.io/installing-the-missing-middle/"
+    },
+    {
+      "label": "GAJRA Earth and the global missing middle",
+      "url": "https://auraofintelligence.github.io/gajra-earth-claude-build/"
+    },
+    {
+      "label": "Grain by Grain documentary mission",
+      "url": "https://auraofintelligence.github.io/grain-by-grain-documentary/mission.html"
+    },
+    {
+      "label": "Aura of Intelligence subterranean cities page",
+      "url": "https://auraofintelligence.github.io/subterranean-cities.html"
+    },
+    {
+      "label": "Civilisation of Sand city page",
+      "url": "https://auraofintelligence.github.io/civilisation-of-sand/subterranean-city.html"
+    },
+    {
+      "label": "Micronova and Excursions building page",
+      "url": "https://auraofintelligence.github.io/micronova-and-excursions/building.html"
+    },
+    {
+      "label": "ABS estimate for 31 March 2026, released 17 September",
+      "url": "https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/mar-2026"
+    },
+    {
+      "label": "October 2026 mineral tables",
+      "url": "https://www.ga.gov.au/scientific-topics/minerals/aimr/2026-preliminary-tables"
+    },
+    {
+      "label": "USGS Australian production table, data available through 24 March 2026",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/australia"
+    },
+    {
+      "label": "Australian Aluminium Council",
+      "url": "https://aluminium.org.au/australian-industry/australian-aluminium-industry/"
+    },
+    {
+      "label": "World Steel Association data updated 28 July 2026",
+      "url": "https://worldsteel.org/data/annual-production-steel-data/?ind=P1_crude_steel_total_pub%2FAUS"
+    },
+    {
+      "label": "2045 city calculator",
+      "url": "https://auraofintelligence.github.io/sovereign-capacity-lab/cities-2045.html"
+    },
+    {
+      "label": "2025 Population Statement, published in January 2026 and corrected in March",
+      "url": "https://population.gov.au/sites/population.gov.au/files/2026-03/population-statement-2025.pdf"
+    },
+    {
+      "label": "ABS June 2025 population estimate",
+      "url": "https://www.abs.gov.au/media-centre/media-releases/population-15-june-2025"
+    },
+    {
+      "label": "21 August 2026 housing council report",
+      "url": "https://nhsac.gov.au/reports-and-submissions/quarterly-report-august-2026"
+    },
+    {
+      "label": "25 August 2026 electricity outlook",
+      "url": "https://www.aemo.com.au/-/media/files/electricity/nem/planning_and_forecasting/nem_esoo/2026/2026-electricity-statement-of-opportunities.pdf"
+    },
+    {
+      "label": "October 2025 case study",
+      "url": "https://www.cefc.com.au/case-studies/swarmfarm-robotics-scales-up-for-smarter-cleaner-farming/"
+    },
+    {
+      "label": "project commencing 12 October 2026",
+      "url": "https://arena.gov.au/projects/scaling-sovereign-production-of-the-lumi-fleet/"
+    },
+    {
+      "label": "May 2024 National Robotics Strategy",
+      "url": "https://www.industry.gov.au/publications/national-robotics-strategy/australias-robotics-opportunity"
+    },
+    {
+      "label": "manufacturing hub network, checked 7 November 2026",
+      "url": "https://www.nrmmrrd.qld.gov.au/manufacturing/hubs"
+    },
+    {
+      "label": "22 April 2026 update",
+      "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q1-2026-Update.pdf#page=6"
+    },
+    {
+      "label": "21 October 2026 update",
+      "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf#page=6"
+    },
+    {
+      "label": "corporate Texas page, checked 7 November 2026",
+      "url": "https://www.tesla.com/giga-texas"
+    },
+    {
+      "label": "5 November 2026 construction report",
+      "url": "https://twiscan.com/en/x/JoeTegtmeyer/2118382979592396904"
+    },
+    {
+      "label": "2026 Queensland cost table, page 16",
+      "url": "https://www.rlb.com/wp-content/uploads/sites/1/2025/12/2026-RLB-Rider-Digest_Queensland_Digital.pdf#page=16"
+    },
+    {
+      "label": "11 March 2026 Queensland announcement",
+      "url": "https://amazonau.gcs-web.com/news-releases/news-release-details/amazon-australia-invest-over-750-million-new-robotics-fulfilment/"
+    },
+    {
+      "label": "September 2026 Resources and Energy Quarterly",
+      "url": "https://www.industry.gov.au/publications/resources-and-energy-quarterly-september-2026"
+    },
+    {
+      "label": "Australian manufacturing page",
+      "url": "https://auraofintelligence.github.io/sovereign-capacity-lab/manufacture-australia.html"
+    },
+    {
+      "label": "23 July 2026 Chinese energy plan",
+      "url": "https://english.www.gov.cn/news/202607/23/content_WS6a617ed3c6d00ca5f9a0c5e8.html"
+    },
+    {
+      "label": "20 April 2026 US infrastructure determination",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/04/presidential-determination-pursuant-to-section-303-of-the-defense-production-act-of-1950-as-amended-on-development-manufacturing-and-deployment-of-large-scale-energy-and-energy-related-inf/"
+    },
+    {
+      "label": "October 2026 Geoscience Australia tables",
+      "url": "https://www.ga.gov.au/scientific-topics/minerals/aimr/2026-preliminary-tables"
+    },
+    {
+      "label": "A Fair Go in the Age of Superintelligence",
+      "url": "https://auraofintelligence.github.io/UNGA81-Luke-Hayes/"
+    },
+    {
+      "label": "Purple Party for Australia, or P4A",
+      "url": "https://p4a.xyz/"
+    },
+    {
+      "label": "GAJRA Earth, the Global Association for Joyful Responsible Abundance on Earth",
+      "url": "https://auraofintelligence.github.io/gajra-earth-claude-build/"
+    },
+    {
+      "label": "A Protopian Gambit",
+      "url": "https://auraofintelligence.github.io/i-C-infinity-music-universe/albums/a-protopian-gambit/"
+    },
+    {
+      "label": "G20 Innovation Ministerial remarks and transcript",
+      "url": "https://elonmuskarchive.org/video/g20-innovation-ministerial-2026"
+    },
+    {
+      "label": "Copper in the Age of AI Challenges of Electrification",
+      "url": "https://www.spglobal.com/content/dam/spglobal/global-assets/en/special-reports/copper-in-the-age-of-ai/Copper%20in%20the%20Age%20of%20AI_January%202026.pdf"
+    },
+    {
+      "label": "Australia identified mineral resources 2026 preliminary tables",
+      "url": "https://www.ga.gov.au/scientific-topics/minerals/aimr/2026-preliminary-tables"
+    },
+    {
+      "label": "Cleaning up mixed scrap Decarbonizing aluminum through circularity",
+      "url": "https://www.mckinsey.com/industries/metals-and-mining/our-insights/cleaning-up-mixed-scrap-decarbonizing-aluminum-through-circularity"
+    },
+    {
+      "label": "Mineral Commodity Summaries 2026: Aluminium",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-aluminum.pdf"
+    },
+    {
+      "label": "Appendix 4E and 2026 Annual Report",
+      "url": "https://financialfilings.com/filings/lynas-rare-earths-limited/annual-report/2026/57561152/"
+    },
+    {
+      "label": "Eneabba rare earths refinery investor site visit",
+      "url": "https://www.iluka.com/media/gw1fcmzh/2nov26-eneabba-rare-earths-refinery-investor-site-visit.pdf"
+    },
+    {
+      "label": "Developing mining projects: Nolans",
+      "url": "https://resourcingtheterritory.nt.gov.au/minerals/mines-and-projects/developing-projects"
+    },
+    {
+      "label": "Key Questions on Energy and AI: executive summary",
+      "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+    },
+    {
+      "label": "Electricity generation in 2024 to 2025 and calendar 2025",
+      "url": "https://www.energy.gov.au/publications/australian-energy-statistics-table-o-electricity-generation-fuel-type-2024-25-and-2025"
+    },
+    {
+      "label": "Battery projects drive record NEM connections pipeline",
+      "url": "https://www.aemo.com.au/newsroom/media-release/battery-projects-drive-record-nem-connections-pipeline"
+    },
+    {
+      "label": "Queued Up 2026 edition",
+      "url": "https://emp.lbl.gov/queues"
+    },
+    {
+      "label": "Renewable capacity statistics 2026",
+      "url": "https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026"
+    },
+    {
+      "label": "Global Energy Review 2026 nuclear technology",
+      "url": "https://www.iea.org/reports/global-energy-review-2026/technology-nuclear"
+    },
+    {
+      "label": "Final IPO prospectus",
+      "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm"
+    },
+    {
+      "label": "Cities for 2045 volume loops power and material calculator",
+      "url": "https://auraofintelligence.github.io/sovereign-capacity-lab/cities-2045.html"
+    },
+    {
+      "label": "Grain by Grain generation city mission",
+      "url": "https://auraofintelligence.github.io/grain-by-grain-documentary/mission.html"
+    },
+    {
+      "label": "First autonomous iron ore delivery",
+      "url": "https://www.riotinto.com/en/news/releases/2018/first-autohaul-delivery"
+    },
+    {
+      "label": "G1 technical specifications",
+      "url": "https://www.unitree.com/operate/g1/"
+    },
+    {
+      "label": "Apollo launch specifications",
+      "url": "https://apptronik.com/news-collection/apptronik-unveils-apollo"
+    },
+    {
+      "label": "The next commodity battleground Humanoid robots",
+      "url": "https://www.crugroup.com/en/communities/thought-leadership/2025/the-next-commodity-battleground-humanoid-robots/"
+    },
+    {
+      "label": "Humanoid robots can widen the projected rare earth supply deficit",
+      "url": "https://www.crugroup.com/en/communities/thought-leadership/2026/humanoid-robots-can-widen-the-projected-rare-earth-supply-deficit/"
+    },
+    {
+      "label": "Duke Humanoid V2 public bill of materials",
+      "url": "https://generalroboticslab.github.io/Duke_Humanoid_V2_OpenSource/bom/"
+    },
+    {
+      "label": "Mineral Commodity Summaries 2026 publication record",
+      "url": "https://pubs.usgs.gov/publication/mcs2026"
+    },
+    {
+      "label": "Australian primary aluminium industry",
+      "url": "https://aluminium.org.au/australian-industry/australian-aluminium/"
+    },
+    {
+      "label": "Our story and annual production",
+      "url": "https://www.tomago.com.au/our-story/"
+    },
+    {
+      "label": "Transforming our world the 2030 Agenda for Sustainable Development",
+      "url": "https://sdgs.un.org/2030agenda"
+    },
+    {
+      "label": "The Sustainable Development Goals Report 2026",
+      "url": "https://unstats.un.org/sdgs/report/2026/"
+    },
+    {
+      "label": "Mineral Commodity Summaries 2026: Copper",
+      "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-copper.pdf"
+    },
+    {
+      "label": "Copper properties",
+      "url": "https://www.ga.gov.au/education/minerals-energy/australian-mineral-facts/copper"
+    },
+    {
+      "label": "Aluminium properties and processing",
+      "url": "https://www.ga.gov.au/education/minerals-energy/australian-mineral-facts/aluminium"
+    },
+    {
+      "label": "Australian light vehicle survival and the January 2025 register",
+      "url": "https://www.ntc.gov.au/news/ntcs-new-report-finds-hybrids-rise-australians-switch-petrol-only"
+    },
+    {
+      "label": "Trends in scrappage and survival of US light duty vehicles",
+      "url": "https://baker.utk.edu/wp-content/uploads/2023/03/Formatted-Vehicle-Scrappage-and-Survival_Single-Column_7Mar23.pdf"
+    },
+    {
+      "label": "Vehicle longevity findings from UK roadworthiness records",
+      "url": "https://www.birmingham.ac.uk/news/2025/battery-powered-electric-vehicles-now-match-petrol-and-diesel-counterparts-for-longevity"
+    },
+    {
+      "label": "Safety performance update through June 2026",
+      "url": "https://waymo.com/blog/shorts/safetydata-september26/"
+    },
+    {
+      "label": "Lifetime maintenance and repair support",
+      "url": "https://www.fanuc.co.jp/en/sustainability/social/customers/service.html"
+    },
+    {
+      "label": "Remanufactured robots and inspection procedure",
+      "url": "https://www.abb.com/global/en/areas/robotics/services/remanufacturing-and-workshop-repair/remanufactured-robots"
+    },
+    {
+      "label": "Sustainable by design and component reuse",
+      "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/04/17/sustainable-by-design-innovating-for-zero-waste/"
+    },
+    {
+      "label": "H1 technical specifications",
+      "url": "https://www.unitree.com/h1/"
+    },
+    {
+      "label": "NVIDIA GB200 NVL72 by HPE technical specifications",
+      "url": "https://www.hpe.com/ae/en/collaterals/collateral.a50009224enw.html"
+    },
+    {
+      "label": "DGX GB200 hardware documentation",
+      "url": "https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html"
+    },
+    {
+      "label": "Reformed connections pipeline",
+      "url": "https://www.neso.energy/news/unveiling-new-project-pipeline-deliver-clean-power-2030"
+    },
+    {
+      "label": "Advanced reactor licensing highlights for 2026",
+      "url": "https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/highlights/2026"
+    },
+    {
+      "label": "First fusion application to the PJM interconnection queue",
+      "url": "https://www.cfs.energy/news-and-media/commonwealth-fusion-systems-becomes-first-fusion-company-to-apply-to-pjm-interconnection-the-largest-u.s.-wholesale-electricity-market"
+    },
+    {
+      "label": "Proposed Indiana nuclear development",
+      "url": "https://www.aboutamazon.com/news/sustainability/amazon-nuclear-energy-indiana-x-energy-aep"
+    },
+    {
+      "label": "Energy infrastructure determination under the Defense Production Act",
+      "url": "https://www.whitehouse.gov/presidential-actions/2026/04/presidential-determination-pursuant-to-section-303-of-the-defense-production-act-of-1950-as-amended-on-development-manufacturing-and-deployment-of-large-scale-energy-and-energy-related-inf/"
+    },
+    {
+      "label": "AccelerateEU energy resilience programme",
+      "url": "https://energy.ec.europa.eu/strategy/accelerateeu-strengthen-eu-energy-resilience_en"
+    },
+    {
+      "label": "Renewable energy development plan for 2026 to 2030",
+      "url": "https://english.www.gov.cn/news/202607/23/content_WS6a617ed3c6d00ca5f9a0c5e8.html"
+    },
+    {
+      "label": "India reaches 300 gigawatts of non fossil capacity",
+      "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782&lang=1&reg=1"
+    },
+    {
+      "label": "Mission 300 progress across Africa",
+      "url": "https://www.worldbank.org/en/news/press-release/2026/06/16/under-mission-300-a-new-way-of-doing-business-connects-over-50-million-people-to-electricity-across-africa"
+    },
+    {
+      "label": "Capacity Investment Scheme",
+      "url": "https://www.dcceew.gov.au/energy/renewable/capacity-investment-scheme"
+    },
+    {
+      "label": "Renewables 2026 renewable electricity outlook",
+      "url": "https://www.iea.org/reports/renewables-2026/renewable-electricity"
+    },
+    {
+      "label": "Electricity 2026 executive summary",
+      "url": "https://www.iea.org/reports/electricity-2026/executive-summary"
+    },
+    {
+      "label": "Terafab public programme and scale targets",
+      "url": "https://terafab.ai/"
+    },
+    {
+      "label": "Solar irradiance science",
+      "url": "https://earth.gsfc.nasa.gov/climate/projects/solar-irradiance/science"
+    },
+    {
+      "label": "Space solar cell products",
+      "url": "https://www.azurspace.com/en/products/space-products/"
+    },
+    {
+      "label": "Long range wireless power flight demonstration",
+      "url": "https://www.jspacesystems.or.jp/en/news/4968.html"
+    },
+    {
+      "label": "Demonstrated laser power transfer and planned Earth to orbit development",
+      "url": "https://aquila.space/"
+    },
+    {
+      "label": "Wireless power transmission demonstrated in space",
+      "url": "https://www.caltech.edu/about/news/in-a-first-caltechs-space-solar-power-demonstrator-wirelessly-transmits-power-in-space"
+    },
+    {
+      "label": "Nolans final investment decision",
+      "url": "https://territorycoordinator.nt.gov.au/news-and-insights/nts-critical-minerals-future-unlocked-as-arafura-reaches-fid"
+    },
+    {
+      "label": "Rare earth elements: executive summary",
+      "url": "https://www.iea.org/reports/rare-earth-elements/executive-summary"
+    },
+    {
+      "label": "Sartell manufacturing site steel raising",
+      "url": "https://nironmagnetics.com/niron-magnetics-marks-steel-raising-at-sartell-manufacturing-site/"
+    },
+    {
+      "label": "Rare earth free motor technology at AUSA 2026",
+      "url": "https://nironmagnetics.com/moog-and-niron-magnetics-to-showcase-rare-earth-free-motor-technology-at-ausa-2026/"
+    },
+    {
+      "label": "Abridged standard atomic weights",
+      "url": "https://www.ciaaw.org/abridged-atomic-weights.htm"
+    },
+    {
+      "label": "GNoME and materials discovery",
+      "url": "https://deepmind.google/blog/millions-of-new-materials-discovered-with-deep-learning/"
+    },
+    {
+      "label": "An autonomous laboratory for accelerated inorganic materials synthesis",
+      "url": "https://www.nature.com/articles/s41586-023-06734-w"
+    },
+    {
+      "label": "AI assisted copper recovery at Escondida",
+      "url": "https://www.bhp.com/news/media-centre/releases/2023/05/bhp-and-microsoft-use-ai-to-lift-escondida-copper-recovery"
+    },
+    {
+      "label": "Nuton copper processing and Amazon Web Services collaboration",
+      "url": "https://www.riotinto.com/news/releases/2026/rio-tinto-and-amazon-web-services-collaborate-to-bring-low-carbon-nuton-copper-to-u-s--data-centres"
+    },
+    {
+      "label": "Installing the Missing Middle",
+      "url": "https://auraofintelligence.github.io/installing-the-missing-middle/"
+    },
+    {
+      "label": "GAJRA Earth public concept site",
+      "url": "https://auraofintelligence.github.io/gajra-earth-claude-build/"
+    },
+    {
+      "label": "Subterranean Eco Cities worldwide scope",
+      "url": "https://auraofintelligence.github.io/subterranean-cities.html"
+    },
+    {
+      "label": "The subterranean city thought experiment",
+      "url": "https://auraofintelligence.github.io/civilisation-of-sand/subterranean-city.html"
+    },
+    {
+      "label": "What is being built",
+      "url": "https://auraofintelligence.github.io/micronova-and-excursions/building.html"
+    },
+    {
+      "label": "National state and territory population March 2026",
+      "url": "https://www.abs.gov.au/statistics/people/population/national-state-and-territory-population/mar-2026"
+    },
+    {
+      "label": "Australia production table including copper processing",
+      "url": "https://www.usgs.gov/centers/national-minerals-information-center/australia"
+    },
+    {
+      "label": "Australian aluminium industry production",
+      "url": "https://aluminium.org.au/australian-industry/australian-aluminium-industry/"
+    },
+    {
+      "label": "Australian crude steel annual production",
+      "url": "https://worldsteel.org/data/annual-production-steel-data/?ind=P1_crude_steel_total_pub%2FAUS"
+    },
+    {
+      "label": "2025 Population Statement",
+      "url": "https://population.gov.au/sites/population.gov.au/files/2026-03/population-statement-2025.pdf"
+    },
+    {
+      "label": "Population up 1 point 5 per cent in June 2025",
+      "url": "https://www.abs.gov.au/media-centre/media-releases/population-15-june-2025"
+    },
+    {
+      "label": "Quarterly Report August 2026",
+      "url": "https://nhsac.gov.au/reports-and-submissions/quarterly-report-august-2026"
+    },
+    {
+      "label": "2026 Electricity Statement of Opportunities for the National Electricity Market",
+      "url": "https://www.aemo.com.au/-/media/files/electricity/nem/planning_and_forecasting/nem_esoo/2026/2026-electricity-statement-of-opportunities.pdf"
+    },
+    {
+      "label": "A$7 million commitment to SwarmFarm and Toowoomba manufacturing",
+      "url": "https://www.cefc.com.au/case-studies/swarmfarm-robotics-scales-up-for-smarter-cleaner-farming/"
+    },
+    {
+      "label": "Scaling Sovereign Production of the LUMI Fleet in Melbourne",
+      "url": "https://arena.gov.au/projects/scaling-sovereign-production-of-the-lumi-fleet/"
+    },
+    {
+      "label": "Australia's robotics opportunity and existing industrial capability",
+      "url": "https://www.industry.gov.au/publications/national-robotics-strategy/australias-robotics-opportunity"
+    },
+    {
+      "label": "Manufacturing hubs and regional industry connections",
+      "url": "https://www.nrmmrrd.qld.gov.au/manufacturing/hubs"
+    },
+    {
+      "label": "Q1 2026 update with planned Optimus lines for Fremont and Texas",
+      "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q1-2026-Update.pdf#page=6"
+    },
+    {
+      "label": "Q3 2026 update with Fremont early production and Texas construction status",
+      "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf#page=6"
+    },
+    {
+      "label": "Gigafactory Texas factory floor and land area",
+      "url": "https://www.tesla.com/giga-texas"
+    },
+    {
+      "label": "Optimus factory construction report with more than seven million square feet across multiple levels",
+      "url": "https://twiscan.com/en/x/JoeTegtmeyer/2118382979592396904"
+    },
+    {
+      "label": "Australian industrial construction cost ranges and exclusions",
+      "url": "https://www.rlb.com/wp-content/uploads/sites/1/2025/12/2026-RLB-Rider-Digest_Queensland_Digital.pdf#page=16"
+    },
+    {
+      "label": "Queensland robotics fulfilment centre planned at more than A$750 million",
+      "url": "https://amazonau.gcs-web.com/news-releases/news-release-details/amazon-australia-invest-over-750-million-new-robotics-fulfilment/"
+    },
+    {
+      "label": "Resources and energy quarterly September 2026",
+      "url": "https://www.industry.gov.au/publications/resources-and-energy-quarterly-september-2026"
+    },
+    {
+      "label": "Build robots in Australia for domestic use and export",
+      "url": "https://auraofintelligence.github.io/sovereign-capacity-lab/manufacture-australia.html"
+    },
+    {
+      "label": "A Fair Go in the Age of Superintelligence",
+      "url": "https://auraofintelligence.github.io/UNGA81-Luke-Hayes/"
+    },
+    {
+      "label": "Purple Party for Australia civic workbench",
+      "url": "https://p4a.xyz/"
+    },
+    {
+      "label": "A Protopian Gambit album and songs",
+      "url": "https://auraofintelligence.github.io/i-C-infinity-music-universe/albums/a-protopian-gambit/"
+    }
+  ]
+}
