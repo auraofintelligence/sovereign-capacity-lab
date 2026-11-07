@@ -1,7 +1,8 @@
-import * as M from './model.mjs?v=2';
-import {calculateScenario,yearSeries} from './scenario.mjs?v=2';
-import {createExplorer,renderDesignCharts} from './explorer.mjs?v=2';
-import {defaults,chemistries,feedstocks,readScenario,saveScenario,validateState} from './state.mjs?v=2';
+import * as M from './model.mjs?v=3';
+import {opportunitySections,renderOpportunityResults} from './opportunity-ui.mjs?v=3';
+import {calculateScenario,yearSeries} from './scenario.mjs?v=3';
+import {createExplorer,renderDesignCharts} from './explorer.mjs?v=3';
+import {defaults,chemistries,feedstocks,readScenario,saveScenario,validateState} from './state.mjs?v=3';
 const weights=Object.fromEntries(window.ELEMENTS.map(e=>[e.sym,e.mass]));
 const el=document.querySelector('#calculator');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -72,6 +73,7 @@ const sections={
  panel('exports','Export into added global requirements','The export share applies to the added annual global copper end use in this scenario compared with 2025. It is an illustrative sales target. Buyers, processing, recovery and domestic allocations determine actual projects.',group('Export share',field('exportShare','Share of the added global copper requirement','%',{percent:true,max:100})),resultBox('exports-result','Additional annual copper sales target')),
 };
 
+sections.opportunity=()=>opportunitySections({field,group,panel,resultBox,assumption});
 const spaceSections=sections.space;
 const powerSections=sections.power;
 sections.power=()=>powerSections().replace('<legend>Protected annual allocations</legend>', '<legend>Protected annual allocations</legend>').replace('</fieldset><fieldset><legend>Protected annual allocations', '</fieldset>'+group('Additional clean generation pathways',field('otherCleanGW','Other new clean nameplate capacity','GW',{help:'For example conventional hydro, geothermal or a specified future fusion programme. Storage is excluded.'})+field('otherCleanCF','Capacity factor for this additional generation','%',{percent:true,max:100}))+'<fieldset><legend>Protected annual allocations')+'<p><button type="button" data-action="use-solar-ramp">Use accumulated solar construction in the power budget</button></p>';
@@ -87,6 +89,7 @@ function update(){
   renderDesignCharts(page,state,r,weights);explorer.render(state,r);document.querySelector('#notice').textContent='';
   try{sessionStorage.setItem('capacity-lab-v2',saveScenario(state));}catch{}
   const {f,c,budget:b}=r;
+  if(page==='opportunity')renderOpportunityResults(state,r,{setResult,metrics,metric,table,fmt,tn});
   setResult('propellant-result',metrics(metric('Total launches at selected multiplier',fmt(r.propellant.flights)),metric('Complete propellant',tn(r.propellant.totalT)),metric('Fuel',tn(r.propellant.fuelT)),metric('Oxygen',tn(r.propellant.oxygenT)),metric('Hydrogen in fuel',tn(r.propellant.hydrogenT)),metric('Hydrogen production electricity only',fmt(r.propellant.electrolysisTWh)+' TWh'))+table('Inputs if fuel is made from water and captured carbon dioxide',['Process input','Quantity'],[['Water throughput for hydrogen',tn(r.propellant.waterTForHydrogen)],['Carbon dioxide feed for carbon',tn(r.propellant.co2TForCarbon)]])+`<p>Captured carbon dioxide feed is not a claim of net emissions. The electricity source, process losses and full fuel cycle determine that account. This terrestrial production energy is additional unless already included in the industrial power plan.</p>`);
   setResult('ledger-result',metrics(metric('Finished component mass',tn(r.ledger.massT)),metric('Components included',fmt(r.ledger.items.length)))+table('Element requirements of included components',['Element','Finished','External feed','Primary','Secondary'],Object.entries(r.ledger.totals).map(([e,v])=>[e,tn(v.finished),tn(v.feed),tn(v.primary),tn(v.secondary)]))+`<p>This is a project inventory. Reconcile any included sector allowance before adding it to a global market forecast. Recycling shares still require qualified, allocated supply.</p>`);
   setResult('overview-result',metrics(metric('New robots in this programme this year',fmt(f.units),state.year<state.start?'Modelled manufacture begins in '+state.start+'.':''),metric('Operating fleet',fmt(f.live)),metric('Ground compute electricity',fmt(c.computeTWh)+' TWh/year'),metric('Robot electricity',fmt(c.robotTWh)+' TWh/year'),metric('Protected clean supply gap',fmt(b.protectedGap)+' TWh/year'),metric('Compute and robot supply gap',fmt(b.projectGap)+' TWh/year'))+`<p class="status ${b.projectGap||b.protectedGap?'shortfall':'balanced'}">${b.projectGap||b.protectedGap?'The selected clean supply does not meet all demands.':'The annual clean energy budget covers the selected demands.'} Timing and dependable delivery need separate checks.</p>`+table('Manufacturing horizons',['Year','New robots','Surviving fleet','Ground compute TWh/year'],yearSeries(state,weights).filter(v=>[2026,2027,2028,2029,2031,2032,2036,state.year].includes(v.year)).map(v=>[v.year,fmt(v.f.units),fmt(v.f.live),fmt(v.c.computeTWh)])));
@@ -128,6 +131,9 @@ function download(name,text,type){const a=document.createElement('a');const u=UR
 document.addEventListener('click',async e=>{
  const a=e.target.closest('[data-action]')?.dataset.action;if(!a)return;
  try{
+  if(a==='au-pilot'){Object.assign(state,{auModuleM2:4500,auSupportM2:1500});syncForm();}
+  if(a==='au-modular'){Object.assign(state,{auModuleM2:20000,auSupportM2:5000});syncForm();}
+  if(a==='au-faster'){Object.assign(state,{auModuleM2:20000,auSupportM2:5000,auFactoryGrowth:1.54});syncForm();}
   if(a==='reset'){state={...defaults};syncForm();}
   if(a==='add-component'){const rows=JSON.parse(state.components);if(rows.length>=100)throw Error('The ledger supports at most 100 components.');rows.push({name:'New component',qty:1,kg:1,formula:'Cu',yield:state.yield,secondary:state.secondary});state.components=JSON.stringify(rows);renderLedger();update();}
   if(a==='load-components'){

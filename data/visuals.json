@@ -630,5 +630,66 @@
         "height": 680
       }
     ]
+  },
+  "hero-opportunity": {
+    "key": "hero-opportunity",
+    "type": "generated",
+    "title": "Australian civic robot manufacturing concept",
+    "alt": "Concept of Australian technicians assembling modular civic robots in a modern industrial workshop with rooftop solar and gum trees outside.",
+    "caption": "An Australian manufacturing concept with replaceable robot modules, local technicians and independent service capability.",
+    "creator": "Luke Nathan Hayes with OpenAI image generation",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": null,
+    "prompt": "Use case: stylized-concept. A wide cinematic photorealistic architectural concept image for an Australian robot manufacturing opportunity webpage. A practical modern industrial factory in regional southeast Queensland, high clear-span steel shed with skylights, several parallel assembly and test bays producing modular civic service robots, wheeled platforms and a small number of humanoid machines. Australian adult technicians in normal safe workwear assemble replaceable joint modules and inspect wiring, with precision machining and parts racks further back. Large doors on the right reveal clean rooftop solar, gum trees and a freight yard in warm morning light. Human-owned local manufacturing and independent service capability. Rich forest green shadows, warm copper and gold highlights, credible engineering, welcoming working environment. Panoramic approximately two to one aspect ratio. Main visual detail towards centre and right, darker quieter left third for a website heading overlay. No writing, flags, logos, official branding or watermark. Clearly a plausible future concept, not a photograph of an existing company or commissioned facility.",
+    "method": "Built-in image_gen",
+    "variants": [
+      {
+        "path": "assets/images/hero-opportunity-768.webp",
+        "width": 768,
+        "height": 384
+      },
+      {
+        "path": "assets/images/hero-opportunity-1280.webp",
+        "width": 1280,
+        "height": 640
+      },
+      {
+        "path": "assets/images/hero-opportunity-1774.webp",
+        "width": 1774,
+        "height": 887
+      }
+    ]
+  },
+  "figure-factory-floor": {
+    "key": "figure-factory-floor",
+    "type": "figure",
+    "title": "Factory floor area comparison",
+    "alt": "Total floor areas compared: existing Giga Texas over 929,000 square metres; reported new Optimus building over 650,000; announced Amazon Queensland centre 150,000; worked Australian module 20,000.",
+    "caption": "Floor space across multiple levels is separate from site land. The Tesla vehicle figure comes from the company; the new Optimus area is an observer report. Amazon is an announced project and the Australian module is a worked design.",
+    "creator": "Sovereign Capacity Lab calculations prepared for Luke Nathan Hayes",
+    "date": "7 November 2026",
+    "license": "Strange But True Public Source Licence",
+    "license_url": "licence.html",
+    "source_url": "data/australian-factory-benchmarks.json",
+    "method": "Matplotlib from dated source areas and the stated Australian module",
+    "variants": [
+      {
+        "path": "assets/images/figure-factory-floor-768.webp",
+        "width": 768,
+        "height": 355
+      },
+      {
+        "path": "assets/images/figure-factory-floor-1280.webp",
+        "width": 1280,
+        "height": 591
+      },
+      {
+        "path": "assets/images/figure-factory-floor-1774.webp",
+        "width": 1774,
+        "height": 820
+      }
+    ]
   }
 }

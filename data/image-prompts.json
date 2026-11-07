@@ -64,5 +64,11 @@
     "prompt": "Use case: stylized-concept. Wide editorial photographic concept image about checking scientific evidence. A welcoming materials research library and laboratory, with an open unmarked technical notebook, a mineral specimen, a small precision balance and a microscope on a timber desk, shelves and glass-fronted material sample cabinets in the background. Realistic scientific practice, careful observation and accessible learning. Deep forest green and warm copper highlights. Panoramic image with key subject centre/right and quiet darker left for a website heading overlay. No readable lettering, logos, arbitrary equations, graphs or watermark.",
     "generated_on": "2026-11-07",
     "method": "Built-in image_gen"
+  },
+  {
+    "key": "hero-opportunity",
+    "prompt": "Use case: stylized-concept. A wide cinematic photorealistic architectural concept image for an Australian robot manufacturing opportunity webpage. A practical modern industrial factory in regional southeast Queensland, high clear-span steel shed with skylights, several parallel assembly and test bays producing modular civic service robots, wheeled platforms and a small number of humanoid machines. Australian adult technicians in normal safe workwear assemble replaceable joint modules and inspect wiring, with precision machining and parts racks further back. Large doors on the right reveal clean rooftop solar, gum trees and a freight yard in warm morning light. Human-owned local manufacturing and independent service capability. Rich forest green shadows, warm copper and gold highlights, credible engineering, welcoming working environment. Panoramic approximately two to one aspect ratio. Main visual detail towards centre and right, darker quieter left third for a website heading overlay. No writing, flags, logos, official branding or watermark. Clearly a plausible future concept, not a photograph of an existing company or commissioned facility.",
+    "generated_on": "2026-11-07",
+    "method": "Built-in image_gen"
   }
 ]

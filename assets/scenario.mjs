@@ -1,4 +1,5 @@
-import * as M from './model.mjs?v=2';
+import * as M from './model.mjs?v=3';
+import {australianManufacturing} from './australian-manufacturing.mjs?v=3';
 export function calculateScenario(s,weights){
  if(!Number.isInteger(s.year)||s.year<2026||s.year>2040)throw Error("Choose a whole year from 2026 to 2040.");
  M.positive(s.energyGrowth,'Annual compute electricity growth');
@@ -42,7 +43,8 @@ export function calculateScenario(s,weights){
  const cuBase=interpolate(s.year),alBase=s.marketAl2025*(s.marketAl2035/s.marketAl2025)**((s.year-2025)/10);
  const cuMarket=cuBase+Math.max(0,inventory.Cu.finished-s.embeddedRobotCuT),alMarket=alBase+Math.max(0,inventory.Al.finished-s.embeddedRobotAlT);
  const ledger=M.inventory(JSON.parse(s.components),weights);
- return {f,c,generation,generationPlan,progress,allocations,population,budget,batteryRobot,motors,perRobot,inventory,store,pv,gridBattery,ore,cap,orbit,beam,propellant,pop,service,refinery,rackT,solarBuildTotal,solarBuilds,cuBase,alBase,cuMarket,alMarket,ledger};
+ const au=australianManufacturing(s,perRobot);
+ return {f,c,generation,generationPlan,progress,allocations,population,budget,batteryRobot,motors,perRobot,inventory,store,pv,gridBattery,ore,cap,orbit,beam,propellant,pop,service,refinery,rackT,solarBuildTotal,solarBuilds,cuBase,alBase,cuMarket,alMarket,ledger,au};
 }
 
 export function yearSeries(s,weights,end=s.chartEndYear){

@@ -1,5 +1,6 @@
-import * as M from './model.mjs?v=2';
-import {saveScenario,readScenario} from './state.mjs?v=2';
+import * as M from './model.mjs?v=3';
+import {australianManufacturing} from './australian-manufacturing.mjs?v=3';
+import {saveScenario,readScenario} from './state.mjs?v=3';
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const number=n=>new Intl.NumberFormat('en-AU',{maximumSignificantDigits:4}).format(n);
 const axisNumber=n=>n>=1e9?number(n/1e9)+'bn':n>=1e6?number(n/1e6)+'m':n>=1e3?number(n/1e3)+'k':number(n);
@@ -50,6 +51,7 @@ function chart({id,title,unit,series},rows,selected,comparison=null,{xLabel='Yea
 }
 
 const quickFields={
+ opportunity:[['auFactoryGrowth','Annual Australian factory rollout multiplier','times',1],['auModuleM2','Australian factory module floor','m²',1],['auExportShare','Manufacture allocated to exports','%',100],['auBuildingAUDM2','Building contract rate','A$/m²',1]],
  overview:[['energyGrowth','Compute electricity growth','%/year',100],['early','Early robot manufacture multiplier','times',1],['late','Later manufacture multiplier','times',1],['robotW','Average robot power','W',1]],
  power:[['energyGrowth','Compute electricity growth','%/year',100],['solarGW','Solar at the power plan year','GW',1],['powerBuildGrowth','Annual construction multiplier','times',1],['transitionTWh','Fossil replacement at the plan year','TWh/year',1]],
  machines:[['first','First annual manufacture','machines',1],['early','Early manufacture multiplier','times',1],['late','Later manufacture multiplier','times',1],['secondary','Qualified secondary feed share','%',100]],
@@ -62,64 +64,101 @@ const quickFields={
 
 export function createExplorer(el,{page,weights,getState,series,onChange}){
  if(!el)return {render(){},pause(){}};
- const root=document.createElement('section');root.id='year-explorer';root.className='year-explorer';
- const s=getState();
- const hasDesign=['storage','matter','space','ledger'].includes(page);
- let topic=hasDesign?'design':page==='australia'?'australia':page==='power'?'power':'machines';
+ const root=document.createElement('section');root.id='year-explorer';root.className='year-explorer compact-explorer';
+ const hasDesign=['storage','matter','space','ledger','opportunity'].includes(page);
+ let choice=hasDesign?'design:first':page==='australia'?'australia:people':page==='power'?'power:budget':'machines:annual';
  let pinned=null;try{const saved=sessionStorage.getItem('capacity-lab-comparison');if(saved)pinned=readScenario(saved);}catch{}
- const fields=(quickFields[page]||[]).map(([key,label,unit,scale])=>`<label class="field" for="quick-${key}"><span>${label}</span><span class="input-unit"><input id="quick-${key}" data-key="${key}" data-scale="${scale}" type="number" min="0" step="any" value="${s[key]*scale}"><span>${unit}</span></span></label>`).join('');
- root.innerHTML=`<div class="explorer-title"><div><p class="eyebrow">See the whole path</p><h2>Explore the years</h2></div><a href="#${{overview:'scenario',power:'power',machines:'manufacture',matter:'feedstock',storage:'solar',space:'orbital',australia:'australia',ledger:'ledger'}[page]}">All ${page==='ledger'?'project':'design and scenario'} inputs ↓</a></div><div class="year-controls"><label for="year">Year in view <input id="year" data-key="year" type="number" min="2026" max="2040" step="1" value="${s.year}"></label><label for="chart-end">Chart ends in <select id="chart-end"><option>2031</option><option selected>2036</option><option>2040</option></select></label><label class="year-slider-label" for="year-range">Move through time<input id="year-range" data-key="year" type="range" min="2026" max="${s.chartEndYear}" step="1" value="${s.year}"></label><div class="year-jumps" aria-label="Planning horizons">${[2026,2027,2028,2029,2031,2032,2036].map(y=>`<button type="button" data-pick-year="${y}" ${y===s.year?'aria-pressed="true"':'aria-pressed="false"'}>${y}${y===2026?' · now':y===2032?' · Brisbane':` · +${y-2026}y`}</button>`).join('')}</div></div><div class="explorer-layout">${fields?`<aside class="quick-assumptions"><h3>Change an assumption</h3><p>The graphs and detailed inputs update together.</p>${fields}</aside>`:''}<div class="explorer-main"><div class="graph-topics" role="group" aria-label="Graph topic">${Object.entries(labels).map(([k,label])=>`<button type="button" data-topic="${k}" aria-pressed="${k===topic}">${label}</button>`).join('')}</div><div class="compare-tools"><button type="button" data-explorer-action="pin">Pin current assumptions</button><button type="button" class="secondary" data-explorer-action="clear" hidden>Clear comparison</button><button type="button" class="secondary" data-explorer-action="csv">Download all years CSV</button></div><p class="comparison-note" role="status"></p><p class="trajectory-note"></p><div class="year-graphs"></div><details class="year-data"><summary>Read every year in a table</summary><div class="year-data-table"></div></details></div></div>`;
- if(hasDesign){const button=document.createElement('button');button.type='button';button.dataset.topic='design';button.textContent='This design';root.querySelector('.graph-topics').prepend(button);}
- const quick=root.querySelector('.quick-assumptions');
- if(quick){
-  const heading=quick.querySelector('h3');heading.remove();
-  const details=document.createElement('details');details.className='quick-details';details.innerHTML='<summary>Change an assumption</summary><div class="quick-fields"></div>';
-  const content=details.querySelector('.quick-fields');while(quick.firstChild)content.append(quick.firstChild);quick.append(details);
-  const narrow=matchMedia('(max-width: 720px)');const sizeQuick=()=>{details.open=!narrow.matches;};sizeQuick();narrow.addEventListener('change',sizeQuick);
+ const jumpYears=[2026,2027,2028,2029,2031,2032,2036];
+ const sectionId={overview:'scenario',power:'power',machines:'manufacture',matter:'feedstock',storage:'solar',space:'orbital',australia:'australia',ledger:'ledger',opportunity:'au-manufacture'}[page];
+ root.innerHTML=`<div class="explorer-title"><h2>Explore the years</h2><a href="#${sectionId}">All inputs ↓</a></div><div class="compact-controls"><div class="compact-row"><label for="year">Year <input id="year" data-key="year" type="number" min="2026" max="2040" step="1"></label><label for="year-jump">Horizon <select id="year-jump">${jumpYears.map(y=>`<option value="${y}">${y}${y===2026?' · now':y===2032?' · Brisbane':` · +${y-2026} years`}</option>`).join('')}</select></label><label for="chart-end">Plot to <select id="chart-end"><option>2031</option><option>2036</option><option>2040</option></select></label><label class="graph-picker" for="graph-choice">Graph <select id="graph-choice"></select></label></div><div class="compact-row variable-row"><label class="variable-picker" for="variable-key">Adjust <select id="variable-key"></select></label><div class="variable-editor"></div><details class="explorer-tools"><summary aria-label="Comparison downloads and methods" title="Comparison downloads and methods">More</summary><div class="explorer-tools-menu"><div class="compare-tools"><button type="button" data-explorer-action="pin">Pin current assumptions</button><button type="button" class="secondary" data-explorer-action="clear" hidden>Clear comparison</button><button type="button" class="secondary" data-explorer-action="csv">Download all years CSV</button></div><p class="comparison-note" role="status"></p><p class="trajectory-note"></p></div></details></div><label class="compact-slider" for="year-range"><span class="slider-year">2026</span><input id="year-range" data-key="year" type="range" min="2026" max="2036" step="1" aria-label="Year in view"><span class="slider-end">2036</span></label></div><div class="year-graphs"></div><details class="year-data"><summary>Read every year in a table</summary><div class="year-data-table"></div></details>`;
+ const originalInputs=[...el.querySelectorAll('[data-key]')];
+ const definitions=new Map();
+ for(const [key,label,unit,scale]of quickFields[page]||[])definitions.set(key,{key,label,unit,scale,kind:'number'});
+ for(const input of originalInputs){
+  const key=input.dataset.key;if(key==='year')continue;
+  const label=input.closest('label')?.querySelector('span')?.textContent||key;
+  const unit=input.closest('label')?.querySelector('.input-unit>span')?.textContent||'';
+  const def={key,label,unit,scale:+(input.dataset.scale||1),kind:input.tagName==='SELECT'?'select':input.type,options:input.tagName==='SELECT'?[...input.options].map(o=>[o.value,o.textContent]):null};
+  if(!definitions.has(key))definitions.set(key,def);
  }
- el.prepend(root);let cachedRows=[];
+ let variable=definitions.keys().next().value||null;
+ const variableControl=root.querySelector('#variable-key');variableControl.innerHTML=[...definitions.values()].map(d=>`<option value="${esc(d.key)}">${esc(d.label)}</option>`).join('');
+ if(!variable)root.querySelector('.variable-row').hidden=true;
+ const editor=root.querySelector('.variable-editor');
+ function showVariable(){
+  const d=definitions.get(variable);if(!d)return;variableControl.title=d.label;
+  const value=getState()[variable];
+  editor.innerHTML=`<label class="compact-value" for="explorer-value"><span class="sr-only">${esc(d.label)}</span>`+(d.kind==='select'?`<select id="explorer-value" data-key="${esc(variable)}">${d.options.map(([v,l])=>`<option value="${esc(v)}"${v===value?' selected':''}>${esc(l)}</option>`).join('')}</select>`:`<input id="explorer-value" data-key="${esc(variable)}" data-scale="${d.scale}" type="${d.kind==='text'?'text':'number'}"${d.kind==='text'?'':' min="0" step="any"'} value="${esc(typeof value==='number'?value*d.scale:value)}">`)+`<span class="compact-unit">${esc(d.unit)}</span></label>`;
+ }
+ showVariable();el.prepend(root);let cachedRows=[];
+ const graphForVariable=key=>{
+  if(page==='opportunity'){
+   if(['auBuildingAUDM2','auServicesAUDM2','auEquipmentAUDM2','auLandAUDM2','auSiteworksAUDM2','auSiteCoverage','auContingency','auCostMultiplier','auEngineeringAUD','auUnitCostAUD','auWorkingMonths'].includes(key))return 'design:au-capital';
+   if(['auSaleAUD','auLocalShare'].includes(key))return 'design:au-sales';
+   if(['auExportShare','robotsPerPerson','popTarget','populationTargetYear'].includes(key))return 'design:au-domestic';
+   if(['robotW','auFactoryKWh'].includes(key))return 'design:au-electricity';
+   if(['auServiceShare','serviceKg','recondition'].includes(key))return 'design:au-service';
+   if(key==='sites')return 'design:au-catchments';
+   if(key.startsWith('au'))return 'design:au-output';
+  }
+  if(['orbitAddedGW','orbitTonnesGW','payloadT'].includes(key))return 'design:orbital-launches';
+  if(['radiatorK','emissivity','orbitComputeGW','orbitOverhead'].includes(key))return 'design:radiator-temperature';
+  if(['bufferHours','bufferLoadGW','dod','charge','discharge'].includes(key))return 'design:storage-duration';
+  if(['pvLoadGW','pvCF','storedShare','cellEfficiency','silverMgW','siliconMicron','pvFormula','pvDensity'].includes(key))return 'design:daily-power';
+  if(['grade','recovery','feedFormula','primaryT','material'].includes(key))return 'design:ore-grade';
+  if(['supplyNow','supplyGrowth','supplyYears','supplyNeeded'].includes(key))return 'design:supply-expansion';
+  if(['first','early','late','start','split'].includes(key))return 'machines:annual';
+  if(['accident','automation','otherLoss'].includes(key))return 'machines:fleet';
+  if(['energyGrowth','baseEnergy','robotW','util','pue'].includes(key))return 'power:electricity';
+  if(['solarGW','windGW','nuclearGW','otherCleanGW','solarCF','windCF','nuclearCF','otherCleanCF','transitionTWh','essentialTWh','retiredCleanTWh','powerTargetYear','powerBuildGrowth'].includes(key))return 'power:budget';
+  if(['popBase','popTarget','populationTargetYear'].includes(key))return 'australia:people';
+  if(key==='robotsPerPerson')return 'australia:civic';
+  return 'materials:primary';
+ };
  const render=(state)=>{
   const end=Math.max(state.chartEndYear,state.year);cachedRows=series(state,weights,end);
-  const prior=pinned?series(pinned,weights,end):null;
-  const endControl=root.querySelector('#chart-end');if(![...endControl.options].some(o=>+o.value===end))endControl.add(new Option(String(end),String(end)));endControl.value=end;root.querySelector('#year-range').max=end;
-  root.querySelectorAll('[data-pick-year]').forEach(b=>b.setAttribute('aria-pressed',String(+b.dataset.pickYear===state.year)));
-  root.querySelectorAll('[data-topic]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.topic===topic)));
-  root.querySelector('[data-explorer-action="clear"]').hidden=!pinned;
-  root.querySelector('[data-explorer-action="pin"]').hidden=topic==='design';
-  root.querySelector('[data-explorer-action="clear"]').hidden=topic==='design'||!pinned;
+  const designFigures=[...el.querySelectorAll('.design-graphs .live-chart')];designFigures.forEach((figure,i)=>{if(!figure.dataset.chartId)figure.dataset.chartId='design-'+i;});
+  const graphOptions=Object.entries(chartGroups).map(([group,graphs])=>`<optgroup label="${labels[group]}">${graphs.map(g=>`<option value="${group}:${g.id}">${esc(g.title)}</option>`).join('')}</optgroup>`).join('')+(designFigures.length?`<optgroup label="This design">${designFigures.map(g=>`<option value="design:${g.dataset.chartId}">${esc(g.querySelector('h3').textContent)}</option>`).join('')}</optgroup>`:'');
+  const picker=root.querySelector('#graph-choice');picker.innerHTML=graphOptions;
+  if(choice==='design:first')choice=designFigures.length?'design:'+designFigures[0].dataset.chartId:'machines:annual';
+  if(![...picker.options].some(o=>o.value===choice))choice='machines:annual';picker.value=choice;
+  const [topic,graphId]=choice.split(':');
+  const endControl=root.querySelector('#chart-end');if(![...endControl.options].some(o=>+o.value===end))endControl.add(new Option(String(end),String(end)));endControl.value=end;
+  const jump=root.querySelector('#year-jump');if(![...jump.options].some(o=>+o.value===state.year))jump.add(new Option(String(state.year),String(state.year)));jump.value=state.year;
+  root.querySelector('#year').value=state.year;root.querySelector('#year-range').value=state.year;root.querySelector('#year-range').max=end;root.querySelector('.slider-year').textContent=state.year;root.querySelector('.slider-end').textContent=end;
+  root.querySelector('[data-explorer-action="clear"]').hidden=topic==='design'||!pinned;root.querySelector('[data-explorer-action="pin"]').hidden=topic==='design';
   root.querySelector('[data-explorer-action="pin"]').disabled=false;root.querySelector('[data-explorer-action="csv"]').disabled=false;
-  root.querySelector('.comparison-note').textContent=topic==='design'?'These curves use your current design inputs. Choose an annual topic to explore the years.':pinned?'Solid lines: current assumptions. Dashed lines: your pinned assumptions.':'Pin a scenario, then change an input to compare both paths.';
-  const note=topic==='power'?`Power plan: additional capacity builds from 2025 to ${state.powerTargetYear}, with each annual addition multiplied by ${number(state.powerBuildGrowth)}. Protected allocations grow linearly to the same plan year. Both hold after it. Annual energy balance only.`:topic==='machines'?`Modelled manufacture begins in ${state.start}. Earlier years contain no units from this programme. Accumulated manufacture includes retired units; the surviving fleet deducts final losses after repair options.`:topic==='materials'?'Robot material follows annual manufacture, the selected design, factory yield and secondary share. Copper market anchors retain their source dates in Sources and methods.':'Population is interpolated at a constant compound rate from June 2025 to the entered plan year, then extrapolated at that rate. Fleet figures show the civic service requirement.';
-  root.querySelector('.trajectory-note').textContent=topic==='design'?'Design sensitivities calculated from the entered specifications. Methods dated 7 November 2026.':note+' Scenario method dated 7 November 2026.';
+  root.querySelector('.comparison-note').textContent=topic==='design'?'Design curve from the current inputs.':'Pin a scenario, then edit an input. Solid lines show current assumptions; dashed lines show the pinned case.';
+  root.querySelector('.trajectory-note').textContent=(topic==='power'?`Power capacity builds from the 2025 base to ${state.powerTargetYear}, with annual additions multiplied by ${number(state.powerBuildGrowth)}. Protected allocations grow linearly to that year. Both hold afterwards.`:topic==='machines'?`Manufacture begins in ${state.start}. The surviving fleet deducts final losses after repair.`:topic==='australia'?'Population follows the compound rate from June 2025 to the population plan year, then extends that rate. Civic fleets size a service requirement.':topic==='materials'?'Annual material follows manufacture, the entered design, yield and qualified secondary share.':'Current engineering inputs determine this curve.')+' Scenario method dated 7 November 2026.';
   if(topic==='design'){
-   const figures=[...document.querySelectorAll('#calculator .design-graphs')].map(n=>n.innerHTML).join('');
-   root.querySelector('.year-graphs').innerHTML=figures.replace(/chart-title-/g,'explorer-chart-title-').replace(/chart-desc-/g,'explorer-chart-desc-');
-   root.querySelector('.year-data').hidden=true;return;
+   const figure=designFigures.find(f=>f.dataset.chartId===graphId);
+   root.querySelector('.year-graphs').innerHTML=figure.outerHTML.replace(/chart-title-/g,'explorer-chart-title-').replace(/chart-desc-/g,'explorer-chart-desc-');root.querySelector('.year-data').hidden=true;
+  }else{
+   root.querySelector('.year-data').hidden=false;const g=chartGroups[topic].find(g=>g.id===graphId),prior=pinned?series(pinned,weights,end):null;
+   root.querySelector('.year-graphs').innerHTML=chart(g,cachedRows,state.year,prior);
+   root.querySelector('.year-data-table').innerHTML=`<div class="table-scroll" tabindex="0" role="region" aria-label="Year-by-year results"><table><caption>${esc(g.title)}</caption><thead><tr><th scope="col">Year</th>${g.series.map(c=>`<th scope="col">${esc(c.label)} (${esc(g.unit)})</th>`).join('')}</tr></thead><tbody>${cachedRows.map(r=>`<tr${r.year===state.year?' class="selected-year"':''}><th scope="row">${r.year}</th>${g.series.map(c=>`<td>${number(c.get(r))}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
   }
-  root.querySelector('.year-data').hidden=false;
-  root.querySelector('.year-graphs').innerHTML=chartGroups[topic].map(g=>chart(g,cachedRows,state.year,prior)).join('');
-  const columns=chartGroups[topic].flatMap(g=>g.series.map(v=>({...v,unit:g.unit})));
-  root.querySelector('.year-data-table').innerHTML=`<div class="table-scroll" tabindex="0" role="region" aria-label="Year-by-year results"><table><caption>Current assumptions, all displayed years</caption><thead><tr><th scope="col">Year</th>${columns.map(c=>`<th scope="col">${esc(c.label)} (${esc(c.unit)})</th>`).join('')}</tr></thead><tbody>${cachedRows.map(r=>`<tr${r.year===state.year?' class="selected-year"':''}><th scope="row">${r.year}</th>${columns.map(c=>`<td>${number(c.get(r))}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
  };
- root.addEventListener('click',e=>{
-  const year=e.target.closest('[data-pick-year]')?.dataset.pickYear;
-  if(year){onChange({year:+year,chartEndYear:Math.max(+year,getState().chartEndYear)});return;}
-  const tab=e.target.closest('[data-topic]')?.dataset.topic;if(tab){topic=tab;try{render(getState());}catch(err){pause(err.message);}return;}
-  const action=e.target.closest('[data-explorer-action]')?.dataset.explorerAction;
-  if(action==='pin'){try{pinned=readScenario(saveScenario(getState()));try{sessionStorage.setItem('capacity-lab-comparison',saveScenario(pinned));}catch{}render(getState());}catch(err){pause(err.message);}}
-  if(action==='clear'){pinned=null;try{sessionStorage.removeItem('capacity-lab-comparison');}catch{}try{render(getState());}catch(err){pause(err.message);}}
-  if(action==='csv'){
-   const header=['year','annual_robots','accumulated_robots','operating_robots','compute_twh','robot_twh','new_clean_twh','protected_need_twh','protected_gap_twh','new_machine_gap_twh','robot_copper_primary_t','robot_aluminium_primary_t','population','civic_fleet_requirement'];
-   const rows=cachedRows.map(r=>[r.year,r.f.units,r.f.cumulative,r.f.live,r.c.computeTWh,r.c.robotTWh,r.generation.twh,r.budget.protectedNeed,r.budget.protectedGap,r.budget.projectGap,r.inventory.Cu.primary,r.inventory.Al.primary,r.population,r.pop.fleet]);
-   const a=document.createElement('a'),url=URL.createObjectURL(new Blob([[header,...rows].map(r=>r.join(',')).join('\r\n')],{type:'text/csv'}));a.href=url;a.download='capacity-year-by-year.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
-  }
- });
  root.querySelector('#chart-end').addEventListener('change',e=>onChange({chartEndYear:+e.target.value,year:Math.min(getState().year,+e.target.value)}));
+ root.querySelector('#year-jump').addEventListener('change',e=>onChange({year:+e.target.value,chartEndYear:Math.max(+e.target.value,getState().chartEndYear)}));
+ root.querySelector('#graph-choice').addEventListener('change',e=>{choice=e.target.value;try{render(getState());}catch(err){pause(err.message);}});
+ variableControl.addEventListener('change',()=>{variable=variableControl.value;showVariable();const next=graphForVariable(variable);if(next&&[...root.querySelector('#graph-choice').options].some(o=>o.value===next))choice=next;try{render(getState());}catch(err){pause(err.message);}});
+ root.addEventListener('click',e=>{
+  const action=e.target.closest('[data-explorer-action]')?.dataset.explorerAction;if(!action)return;
+  try{
+   if(action==='pin'){pinned=readScenario(saveScenario(getState()));try{sessionStorage.setItem('capacity-lab-comparison',saveScenario(pinned));}catch{}render(getState());}
+   if(action==='clear'){pinned=null;try{sessionStorage.removeItem('capacity-lab-comparison');}catch{}render(getState());}
+   if(action==='csv'){
+    const header=['year','annual_robots','accumulated_robots','operating_robots','compute_twh','robot_twh','new_clean_twh','protected_need_twh','protected_gap_twh','new_machine_gap_twh','robot_copper_primary_t','robot_aluminium_primary_t','population','civic_fleet_requirement','australian_annual_manufacture','australian_annual_exports','australian_domestic_fleet','australian_factory_modules','australian_floor_m2','australian_capital_AUD2025','australian_working_capital_AUD2025'];
+    const rows=cachedRows.map(r=>[r.year,r.f.units,r.f.cumulative,r.f.live,r.c.computeTWh,r.c.robotTWh,r.generation.twh,r.budget.protectedNeed,r.budget.protectedGap,r.budget.projectGap,r.inventory.Cu.primary,r.inventory.Al.primary,r.population,r.pop.fleet,r.au.produced,r.au.exported,r.au.domesticLive,r.au.factories,r.au.floorM2,r.au.capital,r.au.workingCapital]);
+    const a=document.createElement('a'),url=URL.createObjectURL(new Blob([[header,...rows].map(r=>r.join(',')).join('\r\n')],{type:'text/csv'}));a.href=url;a.download='capacity-year-by-year.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+   }
+  }catch(err){pause(err.message);}
+ });
  root.addEventListener('pointerdown',e=>{
-  const svg=e.target.closest('svg[data-year-plot]');if(!svg)return;
-  const width=svg.viewBox.baseVal.width,left=width===360?68:77,right=width===360?12:18;
+  const svg=e.target.closest('svg[data-year-plot]');if(!svg)return;const width=svg.viewBox.baseVal.width,left=width===360?68:77,right=width===360?12:18;
   const box=svg.getBoundingClientRect(),x=(e.clientX-box.left)/box.width*width;if(x<left||x>width-right)return;
-  const year=Math.round(+svg.dataset.minYear+(x-left)/(width-left-right)*(svg.dataset.maxYear-svg.dataset.minYear));onChange({year});
+  onChange({year:Math.round(+svg.dataset.minYear+(x-left)/(width-left-right)*(svg.dataset.maxYear-svg.dataset.minYear))});
  });
  const pause=message=>{cachedRows=[];root.querySelector('[data-explorer-action="pin"]').disabled=true;root.querySelector('[data-explorer-action="csv"]').disabled=true;root.querySelector('.year-graphs').innerHTML=`<p class="shortfall" role="status">Graphs paused. ${esc(message)}</p>`;root.querySelector('.year-data-table').replaceChildren();document.querySelectorAll('.design-graphs').forEach(n=>{n.innerHTML=`<p class="shortfall">Graphs paused. ${esc(message)}</p>`;});};
  matchMedia('(max-width: 720px)').addEventListener('change',()=>onChange({}));
@@ -134,6 +173,14 @@ const sweep=(max,steps,fn,min=0)=>Array.from({length:steps},(_,i)=>{const year=m
 const includePoint=(rows,value,fn)=>[...rows.filter(r=>Math.abs(r.year-value)>1e-9),{year:value,...fn(value)}].sort((a,b)=>a.year-b.year);
 export function renderDesignCharts(page,s,r,weights){
  try{
+  if(page==='opportunity'){
+   const rows=australianManufacturing({...s,year:Math.max(s.year,s.chartEndYear)},r.perRobot).rows;
+   designSlot('au-manufacture',chart({id:'au-output',title:'Australian production ambition and factory-supported output',unit:'million robots/year',series:[{label:'Manufacturing ambition',get:v=>v.desired/1e6},{label:'Factory output ceiling',get:v=>v.capacity/1e6},{label:'Manufacture supported by the factories',get:v=>v.produced/1e6}]},rows,s.year,null,{selectable:false}));
+   designSlot('au-factories',chart({id:'au-floor',title:'Australian enclosed factory floor',unit:'hectares of floor',series:[{label:'Commissioned factory modules',get:v=>v.floorM2/10000}]},rows,s.year,null,{selectable:false}));
+   designSlot('au-domestic',chart({id:'au-domestic',title:'Domestic civic fleet and the service requirement',unit:'million robots',series:[{label:'Australian domestic fleet operating',get:v=>v.domesticLive/1e6},{label:'Fleet needed at the selected service ratio',get:v=>v.civicNeed/1e6}]},rows,s.year,null,{selectable:false})+chart({id:'au-exports',title:'Domestic manufacture and exports each year',unit:'million robots/year',series:[{label:'For Australian use',get:v=>v.domestic/1e6},{label:'For export',get:v=>v.exported/1e6}]},rows,s.year,null,{selectable:false})+chart({id:'au-electricity',title:'Australian robot operation and factory electricity',unit:'TWh/year',series:[{label:'Domestic robot operation',get:v=>v.domesticOperatingTWh},{label:'Assembly and testing',get:v=>v.assemblyTWh}]},rows,s.year,null,{selectable:false}));
+   designSlot('au-funding',chart({id:'au-capital',title:'Factory capital and production cash required',unit:'A$ billion at late-2025 value',series:[{label:'Accumulated factory and shared engineering capital',get:v=>v.capital/1e9},{label:'Current working capital stock',get:v=>v.workingCapital/1e9}]},rows,s.year,null,{selectable:false})+chart({id:'au-sales',title:'Exports and Australian production spending',unit:'A$ billion/year at late-2025 value',series:[{label:'Gross export sales at the chosen price',get:v=>v.annualExportSales/1e9},{label:'Spend on Australian production inputs',get:v=>v.australianProductionSpend/1e9}]},rows,s.year,null,{selectable:false}));
+   designSlot('au-domestic',document.querySelector('#au-domestic > .design-graphs').innerHTML+chart({id:'au-service',title:'New material for the domestic service programme',unit:'tonnes/year',series:[{label:'Newly supplied service modules',get:v=>v.serviceNewT}]},rows,s.year,null,{selectable:false})+chart({id:'au-catchments',title:'Operating civic robots per service catchment',unit:'robots/catchment',series:[{label:'Domestic operating fleet per catchment',get:v=>s.sites>0?v.domesticLive/s.sites:0}]},rows,s.year,null,{selectable:false}));
+  }
   if(page==='storage'){
    const day=M.dailySolar({loadGW:s.pvLoadGW,peakGW:r.pv.peakGW,cf:s.pvCF,usableGWh:r.store.nominalGWh*s.dod,charge:s.charge,discharge:s.discharge});
    const hours=day.rows.map(v=>({year:v.hour,...v}));

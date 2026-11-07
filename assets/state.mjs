@@ -1,6 +1,13 @@
 export const version=2;
 export const defaults={
  year:2026,chartEndYear:2036,powerTargetYear:2036,powerBuildGrowth:1.15,populationTargetYear:2036,
+ auStart:2027,auSplit:2031,auFirst:5000,auEarly:2.5,auLate:1.6,auExportShare:.35,
+ auReferenceFloorM2:650321.28,auReferenceAnnual:10000000,auProductivityShare:.25,
+ auModuleM2:20000,auSupportM2:5000,auOperatingFraction:.75,auFirstFactories:1,auFactoryGrowth:1.5,
+ auSiteCoverage:.4,auLandAUDM2:250,auBuildingAUDM2:1600,auServicesAUDM2:600,
+ auEquipmentAUDM2:1800,auSiteworksAUDM2:150,auContingency:.2,auCostMultiplier:1,
+ auEngineeringAUD:100000000,auUnitCostAUD:35000,auSaleAUD:50000,auLocalShare:.6,
+ auWorkingMonths:3,auFactoryKWh:500,auServiceShare:.1,
  start:2027,split:2031,first:1000000,early:2.5,late:1.6,
  robotKg:60,robotW:250,accident:.005,automation:.99,otherLoss:.0025,
  yield:.95,secondary:.5,cuKg:6,alKg:21,feKg:20,robotBatteryKWh:.5,

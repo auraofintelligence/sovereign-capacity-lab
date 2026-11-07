@@ -1,0 +1,56 @@
+{
+  "date": "7 November 2026",
+  "square_foot_m2": 0.09290304,
+  "areas": [
+    {
+      "label": "Existing Giga Texas vehicle factory; Tesla corporate page, checked 7 Nov 2026",
+      "floor_m2": 929030.4,
+      "source": {
+        "org": "Tesla",
+        "date": "Undated corporate site checked 7 November 2026",
+        "title": "Gigafactory Texas factory floor and land area",
+        "url": "https://www.tesla.com/giga-texas"
+      }
+    },
+    {
+      "label": "New Texas Optimus building; Observer report, 5 Nov 2026",
+      "floor_m2": 650321.28,
+      "source": {
+        "org": "Joe Tegtmeyer",
+        "date": "5 November 2026; first-person construction observation; reproduced by an X web viewer; area is an observer report, not a Tesla floor-area disclosure",
+        "title": "Optimus factory construction report with more than seven million square feet across multiple levels",
+        "url": "https://twiscan.com/en/x/JoeTegtmeyer/2118382979592396904"
+      }
+    },
+    {
+      "label": "Amazon Queensland fulfilment centre; Announced 11 Mar 2026, planned for 2028",
+      "floor_m2": 150000,
+      "source": {
+        "org": "Amazon Australia",
+        "date": "11 March 2026 announcement; intended completion 2028",
+        "title": "Queensland robotics fulfilment centre planned at more than A$750 million",
+        "url": "https://amazonau.gcs-web.com/news-releases/news-release-details/amazon-australia-invest-over-750-million-new-robotics-fulfilment/"
+      }
+    },
+    {
+      "label": "Worked Australian factory module; Engineering scenario, 7 Nov 2026",
+      "floor_m2": 20000,
+      "source": "Editable engineering assumption, 7 November 2026"
+    }
+  ],
+  "construction_rate": {
+    "source": {
+      "org": "Rider Levett Bucknall",
+      "date": "Riders Digest 2026 Queensland edition page 16; rates current fourth quarter 2025; checked 7 November 2026",
+      "title": "Australian industrial construction cost ranges and exclusions",
+      "url": "https://www.rlb.com/wp-content/uploads/sites/1/2025/12/2026-RLB-Rider-Digest_Queensland_Digital.pdf#page=16"
+    },
+    "Brisbane_metal_clad_AUD_m2": [
+      1360,
+      1800
+    ],
+    "source_floor_m2": 4500,
+    "clear_height_m": 6,
+    "dollar_basis": "Fourth quarter 2025; exclusions stated in the source"
+  }
+}

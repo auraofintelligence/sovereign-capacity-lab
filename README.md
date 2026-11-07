@@ -60,3 +60,15 @@ The fresh view opens at 2026. `assets/scenario.mjs` is the shared pure calculati
 Additional power accumulates from the 2025 base to the separately entered plan year with a normalised annual construction multiplier. Protected annual allocations rise linearly over that interval. Both hold at their plan levels afterwards. Population uses a compound interpolation to its entered plan-year anchor, then extends that rate. These are explicit editable assumptions dated 7 November 2026, not measured annual production data.
 
 Scenario format 2 retains these path inputs. Version 1 imports remain supported, using their original endpoint as their power and population plan year. Existing automatic tab settings migrate with their assumptions retained and the initial view moved to 2026. Subsequent chosen years persist between calculator pages.
+
+## Australian manufacturing opportunity
+
+`manufacture-australia.html` connects domestic civic robots, export orders, factory floor space, actual commissioning and finance. Its separate Australian programme is a component of the global industry, not an addition to the global total. `assets/australian-manufacturing.mjs` caps planned manufacture at the available factory output and preserves domestic and export cohorts separately.
+
+The factory benchmark combines Tesla's April 2026 ten-million-unit long-term design ambition with Joe Tegtmeyer's 5 November 2026 observer report of more than seven million square feet for the Texas Optimus building. That reported area is editable and is not a Tesla-certified floor schedule. The Australian throughput factor is a hypothesis. Brisbane building rates come from the 2026 RLB Queensland digest, using fourth-quarter 2025 rates; land, equipment and other allowances remain explicit engineering inputs.
+
+The worked case and every annual row are in `data/australian-opportunity-case.json`. Rebuild them with `node scripts/export_australian_case.mjs`. Text and dated evidence are in `data/australian-opportunity.txt` and `data/australian-opportunity-sources.json`. All cost accounts use constant late-2025 Australian dollars. Working capital is a current production-cash stock, separate from accumulated factory capital.
+
+The compact explorer uses dropdowns for the graph and adjustable variable, with one active value beside the plot. Extended methods and comparison/export tools sit in a small expandable menu. The complete detailed inputs remain below.
+
+The Australian opportunity is integrated into the research manuscript, its two-page executive summary and the current Word edition in `documents`. The 37-page Word edition has 87 cited sources and 202 hyperlinks. `scripts/build_research_docx.py` reproduces its document structure from the public manuscript and source register using python-docx and lxml; render and visually verify any rebuilt edition before publishing.

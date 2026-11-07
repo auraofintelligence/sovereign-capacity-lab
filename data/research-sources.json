@@ -600,5 +600,71 @@
     "title": "Quarterly Report August 2026",
     "date": "21 August 2026; latest data available to 6 August",
     "url": "https://nhsac.gov.au/reports-and-submissions/quarterly-report-august-2026"
+  },
+  "tesla-robot-q1-2026": {
+    "org": "Tesla",
+    "date": "22 April 2026; manufacturing section page 6",
+    "title": "Q1 2026 update with planned Optimus lines for Fremont and Texas",
+    "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q1-2026-Update.pdf#page=6"
+  },
+  "tesla-robot-q3-2026": {
+    "org": "Tesla",
+    "date": "21 October 2026; manufacturing and infrastructure sections pages 6 to 7",
+    "title": "Q3 2026 update with Fremont early production and Texas construction status",
+    "url": "https://assets-ir.tesla.com/tesla-contents/IR/TSLA-Q3-2026-Update.pdf#page=6"
+  },
+  "tesla-texas-area": {
+    "org": "Tesla",
+    "date": "Undated corporate site checked 7 November 2026",
+    "title": "Gigafactory Texas factory floor and land area",
+    "url": "https://www.tesla.com/giga-texas"
+  },
+  "tesla-observer-nov": {
+    "org": "Joe Tegtmeyer",
+    "date": "5 November 2026; first-person construction observation; reproduced by an X web viewer; area is an observer report, not a Tesla floor-area disclosure",
+    "title": "Optimus factory construction report with more than seven million square feet across multiple levels",
+    "url": "https://twiscan.com/en/x/JoeTegtmeyer/2118382979592396904"
+  },
+  "rlb-industrial-2026": {
+    "org": "Rider Levett Bucknall",
+    "date": "Riders Digest 2026 Queensland edition page 16; rates current fourth quarter 2025; checked 7 November 2026",
+    "title": "Australian industrial construction cost ranges and exclusions",
+    "url": "https://www.rlb.com/wp-content/uploads/sites/1/2025/12/2026-RLB-Rider-Digest_Queensland_Digital.pdf#page=16"
+  },
+  "amazon-qld-2026": {
+    "org": "Amazon Australia",
+    "date": "11 March 2026 announcement; intended completion 2028",
+    "title": "Queensland robotics fulfilment centre planned at more than A$750 million",
+    "url": "https://amazonau.gcs-web.com/news-releases/news-release-details/amazon-australia-invest-over-750-million-new-robotics-fulfilment/"
+  },
+  "swarmfarm-cefc": {
+    "org": "Clean Energy Finance Corporation",
+    "date": "Case study updated October 2025; checked 7 November 2026",
+    "title": "A$7 million commitment to SwarmFarm and Toowoomba manufacturing",
+    "url": "https://www.cefc.com.au/case-studies/swarmfarm-robotics-scales-up-for-smarter-cleaner-farming/"
+  },
+  "luminous-arena-2026": {
+    "org": "Australian Renewable Energy Agency",
+    "date": "Project starts 12 October 2026 and is scheduled to finish 1 May 2030; checked 7 November 2026",
+    "title": "Scaling Sovereign Production of the LUMI Fleet in Melbourne",
+    "url": "https://arena.gov.au/projects/scaling-sovereign-production-of-the-lumi-fleet/"
+  },
+  "robotics-strategy": {
+    "org": "Australian Department of Industry Science and Resources",
+    "date": "28 May 2024 strategy; historical revenue observation relates to 2021",
+    "title": "Australia's robotics opportunity and existing industrial capability",
+    "url": "https://www.industry.gov.au/publications/national-robotics-strategy/australias-robotics-opportunity"
+  },
+  "qld-manufacturing-hubs": {
+    "org": "Queensland Government",
+    "date": "Public manufacturing hub network checked 7 November 2026",
+    "title": "Manufacturing hubs and regional industry connections",
+    "url": "https://www.nrmmrrd.qld.gov.au/manufacturing/hubs"
+  },
+  "au-manufacturing-page": {
+    "org": "Luke Nathan Hayes Sovereign Capacity Lab",
+    "date": "7 November 2026; explicit factory and production assumptions",
+    "title": "Build robots in Australia for domestic use and export",
+    "url": "https://auraofintelligence.github.io/sovereign-capacity-lab/manufacture-australia.html"
   }
 }
