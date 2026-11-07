@@ -1,0 +1,604 @@
+{
+  "copper": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Copper",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-copper.pdf"
+  },
+  "aluminum": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Aluminium",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-aluminum.pdf"
+  },
+  "bauxite-alumina": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Bauxite and alumina",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-bauxite-alumina.pdf"
+  },
+  "iron-ore": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Iron ore",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-iron-ore.pdf"
+  },
+  "lithium": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Lithium",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-lithium.pdf"
+  },
+  "graphite": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Natural graphite",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-graphite.pdf"
+  },
+  "nickel": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Nickel",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-nickel.pdf"
+  },
+  "cobalt": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Cobalt",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-cobalt.pdf"
+  },
+  "rare-earths": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Rare earths",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-rare-earths.pdf"
+  },
+  "tin": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Tin",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-tin.pdf"
+  },
+  "tantalum": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Tantalum",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-tantalum.pdf"
+  },
+  "tungsten": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Tungsten",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-tungsten.pdf"
+  },
+  "silver": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Silver",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-silver.pdf"
+  },
+  "gold": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Gold",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-gold.pdf"
+  },
+  "germanium": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026: Germanium",
+    "date": "2025 estimates; compilation released 6 February 2026 and revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-germanium.pdf"
+  },
+  "usgs": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026 publication record",
+    "date": "6 February 2026; version 1.3 dated 27 May 2026",
+    "url": "https://pubs.usgs.gov/publication/mcs2026"
+  },
+  "atomic": {
+    "org": "Commission on Isotopic Abundances and Atomic Weights",
+    "title": "Abridged standard atomic weights",
+    "date": "2024 table; checked 5 November 2026",
+    "url": "https://www.ciaaw.org/abridged-atomic-weights.htm"
+  },
+  "iea": {
+    "org": "International Energy Agency",
+    "title": "Key Questions on Energy and AI: executive summary",
+    "date": "16 April 2026",
+    "url": "https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary"
+  },
+  "spacex": {
+    "id": 11,
+    "org": "SpaceX / SEC",
+    "title": "Final IPO prospectus",
+    "date": "11 June 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/spaceexplorationtechnologi.htm",
+    "type": "Regulatory filing; includes targets"
+  },
+  "cru": {
+    "org": "CRU",
+    "title": "Humanoid robots can widen the projected rare earth supply deficit",
+    "date": "2026 analysis; checked 5 November 2026",
+    "url": "https://www.crugroup.com/en/communities/thought-leadership/2026/humanoid-robots-can-widen-the-projected-rare-earth-supply-deficit/"
+  },
+  "hpe": {
+    "org": "Hewlett Packard Enterprise",
+    "title": "NVIDIA GB200 NVL72 by HPE technical specifications",
+    "date": "Undated technical page; checked 5 November 2026",
+    "url": "https://www.hpe.com/ae/en/collaterals/collateral.a50009224enw.html"
+  },
+  "nvidia": {
+    "org": "NVIDIA",
+    "title": "DGX GB200 hardware documentation",
+    "date": "Undated technical documentation; checked 5 November 2026",
+    "url": "https://docs.nvidia.com/dgx/dgxgb200-user-guide/hardware.html"
+  },
+  "solar": {
+    "org": "NASA Goddard Space Flight Center",
+    "title": "Solar irradiance science",
+    "date": "Undated scientific reference; checked 5 November 2026",
+    "url": "https://earth.gsfc.nasa.gov/climate/projects/solar-irradiance/science"
+  },
+  "azur": {
+    "org": "AZUR SPACE",
+    "title": "Space solar cell products",
+    "date": "Product page checked 5 November 2026",
+    "url": "https://www.azurspace.com/en/products/space-products/"
+  },
+  "esa": {
+    "org": "European Space Agency",
+    "title": "Qualification of the European 3G30 solar cell assembly",
+    "date": "Project record checked 5 November 2026",
+    "url": "https://nebula.esa.int/content/qualification-fully-european-3g30-bare-solar-cell-integral-diode-tosolar-cell-assembly-level"
+  },
+  "iluka": {
+    "org": "Iluka Resources",
+    "title": "Eneabba rare earths refinery investor site visit",
+    "date": "2 November 2026; construction measured at 30 September 2026",
+    "url": "https://www.iluka.com/media/gw1fcmzh/2nov26-eneabba-rare-earths-refinery-investor-site-visit.pdf"
+  },
+  "ilukaprocess": {
+    "org": "Iluka Resources",
+    "title": "Eneabba resource development",
+    "date": "Project page checked 5 November 2026",
+    "url": "https://www.iluka.com/operations-resource-development/resource-development/eneabba"
+  },
+  "nolans": {
+    "org": "Northern Territory Government",
+    "title": "Developing mining projects: Nolans",
+    "date": "2026 project register; checked 5 November 2026",
+    "url": "https://resourcingtheterritory.nt.gov.au/minerals/mines-and-projects/developing-projects"
+  },
+  "nolansfid": {
+    "org": "Northern Territory Government",
+    "title": "Nolans final investment decision",
+    "date": "21 May 2026",
+    "url": "https://territorycoordinator.nt.gov.au/news-and-insights/nts-critical-minerals-future-unlocked-as-arafura-reaches-fid"
+  },
+  "arafura": {
+    "org": "Arafura Rare Earths",
+    "title": "Nolans project geology and development",
+    "date": "Project page checked 5 November 2026",
+    "url": "https://www.arultd.com/projects/nolans/"
+  },
+  "niron": {
+    "org": "Niron Magnetics",
+    "title": "Sartell manufacturing site steel raising",
+    "date": "10 September 2026",
+    "url": "https://nironmagnetics.com/niron-magnetics-marks-steel-raising-at-sartell-manufacturing-site/"
+  },
+  "moog": {
+    "org": "Moog and Niron Magnetics",
+    "title": "Rare earth free motor technology at AUSA 2026",
+    "date": "2 October 2026",
+    "url": "https://nironmagnetics.com/moog-and-niron-magnetics-to-showcase-rare-earth-free-motor-technology-at-ausa-2026/"
+  },
+  "nitride": {
+    "org": "Jiang and colleagues",
+    "title": "Iron nitride free-standing foils with 20 MGOe magnetic energy product",
+    "date": "5 May 2016; Scientific Reports 6, 25436",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4857173/"
+  },
+  "tetrataenite": {
+    "org": "Houghton and colleagues",
+    "title": "Reinterpretation of report of tetrataenite in bulk alloy castings",
+    "date": "Published online 16 December 2024; 2025 journal issue",
+    "url": "https://advanced.onlinelibrary.wiley.com/doi/full/10.1002/advs.202408796"
+  },
+  "critical": {
+    "org": "International Energy Agency",
+    "title": "Global Critical Minerals Outlook 2026: outlook",
+    "date": "16 July 2026",
+    "url": "https://www.iea.org/reports/global-critical-minerals-outlook-2026/outlook"
+  },
+  "rarechain": {
+    "org": "International Energy Agency",
+    "title": "Rare earth elements: executive summary",
+    "date": "2026 report; checked 5 November 2026",
+    "url": "https://www.iea.org/reports/rare-earth-elements/executive-summary"
+  },
+  "oyu": {
+    "org": "Rio Tinto",
+    "title": "Oyu Tolgoi mine plan update",
+    "date": "6 June 2025",
+    "url": "https://www.riotinto.com/news/releases/2025/update-on-oyu-tolgoi-mine-plan"
+  },
+  "bhp": {
+    "org": "BHP",
+    "title": "Annual report for the year ended 30 June 2026",
+    "date": "2026 annual report; checked 5 November 2026",
+    "url": "https://www.sec.gov/Archives/edgar/data/811809/000119312526354647/bhp-20260630.htm"
+  },
+  "nist": {
+    "org": "US Department of Commerce",
+    "title": "CHIPS agreement with USA Rare Earth",
+    "date": "3 June 2026",
+    "url": "https://www.nist.gov/news-events/news/2026/06/department-commerces-chips-program-finalizes-definitive-agreement-usa-rare"
+  },
+  "iai": {
+    "org": "International Aluminium Institute",
+    "title": "Primary aluminium smelting energy intensity",
+    "date": "Statistical series checked 5 November 2026",
+    "url": "https://international-aluminium.org/statistics/primary-aluminium-smelting-energy-intensity/"
+  },
+  "gnome": {
+    "org": "Google DeepMind",
+    "title": "GNoME and materials discovery",
+    "date": "29 November 2023",
+    "url": "https://deepmind.google/blog/millions-of-new-materials-discovered-with-deep-learning/"
+  },
+  "alab": {
+    "org": "Szymanski and colleagues",
+    "title": "An autonomous laboratory for accelerated inorganic materials synthesis",
+    "date": "29 November 2023; Nature",
+    "url": "https://www.nature.com/articles/s41586-023-06734-w"
+  },
+  "bhpai": {
+    "org": "BHP and Microsoft",
+    "title": "AI assisted copper recovery at Escondida",
+    "date": "30 May 2023",
+    "url": "https://www.bhp.com/news/media-centre/releases/2023/05/bhp-and-microsoft-use-ai-to-lift-escondida-copper-recovery"
+  },
+  "nuton": {
+    "org": "Rio Tinto",
+    "title": "Nuton copper processing and Amazon Web Services collaboration",
+    "date": "15 January 2026",
+    "url": "https://www.riotinto.com/news/releases/2026/rio-tinto-and-amazon-web-services-collaborate-to-bring-low-carbon-nuton-copper-to-u-s--data-centres"
+  },
+  "fairgo": {
+    "org": "Luke Nathan Hayes",
+    "title": "A Fair Go in the Age of Superintelligence",
+    "date": "Public project page checked 5 November 2026",
+    "url": "https://auraofintelligence.github.io/UNGA81-Luke-Hayes/"
+  },
+  "ntc": {
+    "org": "National Transport Commission",
+    "title": "Australian light vehicle survival and the January 2025 register",
+    "date": "Report covering January 2025 registrations; news page checked 6 November 2026",
+    "url": "https://www.ntc.gov.au/news/ntcs-new-report-finds-hybrids-rise-australians-switch-petrol-only"
+  },
+  "cars": {
+    "org": "David L Greene and Benjamin Leard",
+    "title": "Trends in scrappage and survival of US light duty vehicles",
+    "date": "March 2023 manuscript; Table 1 reproduces 2022 estimates for 2003 and 2020",
+    "url": "https://baker.utk.edu/wp-content/uploads/2023/03/Formatted-Vehicle-Scrappage-and-Survival_Single-Column_7Mar23.pdf"
+  },
+  "ukcars": {
+    "org": "University of Birmingham research team",
+    "title": "Vehicle longevity findings from UK roadworthiness records",
+    "date": "24 January 2025; reports research published in Nature Energy",
+    "url": "https://www.birmingham.ac.uk/news/2025/battery-powered-electric-vehicles-now-match-petrol-and-diesel-counterparts-for-longevity"
+  },
+  "fanuc": {
+    "org": "FANUC",
+    "title": "Lifetime maintenance and repair support",
+    "date": "Undated corporate service report; checked 6 November 2026",
+    "url": "https://www.fanuc.co.jp/en/sustainability/social/customers/service.html"
+  },
+  "abb": {
+    "org": "ABB Robotics",
+    "title": "Remanufactured robots and inspection procedure",
+    "date": "Undated service description; checked 6 November 2026",
+    "url": "https://www.abb.com/global/en/areas/robotics/services/remanufacturing-and-workshop-repair/remanufactured-robots"
+  },
+  "microsoft-reuse": {
+    "org": "Microsoft",
+    "title": "Sustainable by design and component reuse",
+    "date": "17 April 2025; reports 2024 results",
+    "url": "https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/04/17/sustainable-by-design-innovating-for-zero-waste/"
+  },
+  "g1": {
+    "org": "Unitree Robotics",
+    "title": "G1 technical specifications",
+    "date": "Product page checked 6 November 2026",
+    "url": "https://www.unitree.com/operate/g1/"
+  },
+  "h1": {
+    "org": "Unitree Robotics",
+    "title": "H1 technical specifications",
+    "date": "Product page checked 6 November 2026",
+    "url": "https://www.unitree.com/h1/"
+  },
+  "apollo": {
+    "org": "Apptronik",
+    "title": "Apollo launch specifications",
+    "date": "2023 launch announcement; checked 6 November 2026",
+    "url": "https://apptronik.com/news-collection/apptronik-unveils-apollo"
+  },
+  "cru-materials": {
+    "org": "CRU and Frank Nikolic",
+    "title": "The next commodity battleground Humanoid robots",
+    "date": "2025 analysis; checked 6 November 2026",
+    "url": "https://www.crugroup.com/en/communities/thought-leadership/2025/the-next-commodity-battleground-humanoid-robots/"
+  },
+  "duke": {
+    "org": "General Robotics Lab",
+    "title": "Duke Humanoid V2 public bill of materials",
+    "date": "Team bill dated 19 September 2026; checked 6 November 2026",
+    "url": "https://generalroboticslab.github.io/Duke_Humanoid_V2_OpenSource/bom/"
+  },
+  "nvidia-open": {
+    "org": "NVIDIA",
+    "title": "GB200 NVL72 designs contributed to Open Compute Project",
+    "date": "2024 technical announcement; checked 6 November 2026",
+    "url": "https://developer.nvidia.com/blog/nvidia-contributes-nvidia-gb200-nvl72-designs-to-open-compute-project/"
+  },
+  "ga2026": {
+    "org": "Geoscience Australia",
+    "title": "Australia identified mineral resources 2026 preliminary tables",
+    "date": "12 October 2026; 2025 production and resources",
+    "url": "https://www.ga.gov.au/scientific-topics/minerals/aimr/2026-preliminary-tables"
+  },
+  "australian-al": {
+    "org": "Australian Aluminium Council",
+    "title": "Australian primary aluminium industry",
+    "date": "2025 production; page checked 7 November 2026",
+    "url": "https://aluminium.org.au/australian-industry/australian-aluminium/"
+  },
+  "tomago": {
+    "org": "Tomago Aluminium",
+    "title": "Our story and annual production",
+    "date": "Undated company page; checked 7 November 2026",
+    "url": "https://www.tomago.com.au/our-story/"
+  },
+  "train": {
+    "org": "Rio Tinto",
+    "title": "First autonomous iron ore delivery",
+    "date": "13 July 2018; delivery on 10 July 2018",
+    "url": "https://www.riotinto.com/en/news/releases/2018/first-autohaul-delivery"
+  },
+  "density-cu": {
+    "org": "Geoscience Australia",
+    "title": "Copper properties",
+    "date": "Educational reference checked 7 November 2026",
+    "url": "https://www.ga.gov.au/education/minerals-energy/australian-mineral-facts/copper"
+  },
+  "density-al": {
+    "org": "Geoscience Australia",
+    "title": "Aluminium properties and processing",
+    "date": "Educational reference checked 7 November 2026",
+    "url": "https://www.ga.gov.au/education/minerals-energy/australian-mineral-facts/aluminium"
+  },
+  "aus-power": {
+    "org": "Australian Government energy statistics",
+    "title": "Electricity generation in 2024 to 2025 and calendar 2025",
+    "date": "2026 statistical release; checked 7 November 2026",
+    "url": "https://www.energy.gov.au/publications/australian-energy-statistics-table-o-electricity-generation-fuel-type-2024-25-and-2025"
+  },
+  "irena2026": {
+    "org": "International Renewable Energy Agency",
+    "title": "Renewable capacity statistics 2026",
+    "date": "March 2026; reports calendar 2025 additions",
+    "url": "https://www.irena.org/Publications/2026/Mar/Renewable-capacity-statistics-2026"
+  },
+  "renewables2026": {
+    "org": "International Energy Agency",
+    "title": "Renewables 2026 renewable electricity outlook",
+    "date": "2026 outlook; checked 7 November 2026",
+    "url": "https://www.iea.org/reports/renewables-2026/renewable-electricity"
+  },
+  "nuclear2026": {
+    "org": "International Energy Agency",
+    "title": "Global Energy Review 2026 nuclear technology",
+    "date": "2026 report; checked 7 November 2026",
+    "url": "https://www.iea.org/reports/global-energy-review-2026/technology-nuclear"
+  },
+  "world-electricity": {
+    "org": "International Energy Agency",
+    "title": "Electricity 2026 executive summary",
+    "date": "February 2026 outlook for 2026 to 2030",
+    "url": "https://www.iea.org/reports/electricity-2026/executive-summary"
+  },
+  "us-emergency": {
+    "org": "United States President",
+    "title": "Energy infrastructure determination under the Defense Production Act",
+    "date": "20 April 2026",
+    "url": "https://www.whitehouse.gov/presidential-actions/2026/04/presidential-determination-pursuant-to-section-303-of-the-defense-production-act-of-1950-as-amended-on-development-manufacturing-and-deployment-of-large-scale-energy-and-energy-related-inf/"
+  },
+  "china-power": {
+    "org": "Government of China",
+    "title": "Renewable energy development plan for 2026 to 2030",
+    "date": "23 July 2026",
+    "url": "https://english.www.gov.cn/news/202607/23/content_WS6a617ed3c6d00ca5f9a0c5e8.html"
+  },
+  "india-power": {
+    "org": "Government of India Press Information Bureau",
+    "title": "India reaches 300 gigawatts of non fossil capacity",
+    "date": "9 August 2026; capacity measured 31 July 2026",
+    "url": "https://www.pib.gov.in/PressReleasePage.aspx?PRID=2296782&lang=1&reg=1"
+  },
+  "eu-power": {
+    "org": "European Commission",
+    "title": "AccelerateEU energy resilience programme",
+    "date": "22 April 2026 programme and 17 July 2026 electrification plan",
+    "url": "https://energy.ec.europa.eu/strategy/accelerateeu-strengthen-eu-energy-resilience_en"
+  },
+  "africa-power": {
+    "org": "World Bank and African Development Bank",
+    "title": "Mission 300 progress across Africa",
+    "date": "16 June 2026",
+    "url": "https://www.worldbank.org/en/news/press-release/2026/06/16/under-mission-300-a-new-way-of-doing-business-connects-over-50-million-people-to-electricity-across-africa"
+  },
+  "cis": {
+    "org": "Australian Department of Climate Change Energy the Environment and Water",
+    "title": "Capacity Investment Scheme",
+    "date": "Target expanded 29 July 2025; page updated 24 June 2026",
+    "url": "https://www.dcceew.gov.au/energy/renewable/capacity-investment-scheme"
+  },
+  "aemo-pipeline": {
+    "org": "Australian Energy Market Operator",
+    "title": "Battery projects drive record NEM connections pipeline",
+    "date": "21 October 2026; September quarter data",
+    "url": "https://www.aemo.com.au/newsroom/media-release/battery-projects-drive-record-nem-connections-pipeline"
+  },
+  "us-queue": {
+    "org": "Berkeley Lab and GridTracker",
+    "title": "Queued Up 2026 edition",
+    "date": "June 2026 report; applications active at 31 December 2025",
+    "url": "https://emp.lbl.gov/queues"
+  },
+  "uk-queue": {
+    "org": "National Energy System Operator",
+    "title": "Reformed connections pipeline",
+    "date": "8 December 2025 announcement; checked 7 November 2026",
+    "url": "https://www.neso.energy/news/unveiling-new-project-pipeline-deliver-clean-power-2030"
+  },
+  "nrc": {
+    "org": "United States Nuclear Regulatory Commission",
+    "title": "Advanced reactor licensing highlights for 2026",
+    "date": "2026 regulatory record; checked 7 November 2026",
+    "url": "https://www.nrc.gov/facilities-safety/new-reactors/advanced-reactors/highlights/2026"
+  },
+  "fusion-grid": {
+    "org": "Commonwealth Fusion Systems",
+    "title": "First fusion application to the PJM interconnection queue",
+    "date": "28 April 2026",
+    "url": "https://www.cfs.energy/news-and-media/commonwealth-fusion-systems-becomes-first-fusion-company-to-apply-to-pjm-interconnection-the-largest-u.s.-wholesale-electricity-market"
+  },
+  "amazon-nuclear": {
+    "org": "Amazon",
+    "title": "Proposed Indiana nuclear development",
+    "date": "October 2026 announcement; exact day unavailable on page; checked 7 November 2026",
+    "url": "https://www.aboutamazon.com/news/sustainability/amazon-nuclear-energy-indiana-x-energy-aep"
+  },
+  "japan-beam": {
+    "org": "Japan Space Systems",
+    "title": "Long range wireless power flight demonstration",
+    "date": "13 December 2024; tests during December 2024",
+    "url": "https://www.jspacesystems.or.jp/en/news/4968.html"
+  },
+  "aquila": {
+    "org": "Aquila Space Technologies",
+    "title": "Demonstrated laser power transfer and planned Earth to orbit development",
+    "date": "Company project record checked 7 November 2026",
+    "url": "https://aquila.space/"
+  },
+  "caltech-beam": {
+    "org": "California Institute of Technology",
+    "title": "Wireless power transmission demonstrated in space",
+    "date": "1 June 2023; experiment began March 2023",
+    "url": "https://www.caltech.edu/about/news/in-a-first-caltechs-space-solar-power-demonstrator-wirelessly-transmits-power-in-space"
+  },
+  "p4a": {
+    "org": "Luke Nathan Hayes",
+    "title": "Purple Party for Australia civic workbench",
+    "date": "Public project page checked 7 November 2026",
+    "url": "https://p4a.xyz/"
+  },
+  "lynas": {
+    "org": "Lynas Rare Earths",
+    "title": "Appendix 4E and 2026 Annual Report",
+    "date": "26 August 2026; year ended 30 June 2026; public copy of issuer report",
+    "url": "https://financialfilings.com/filings/lynas-rare-earths-limited/annual-report/2026/57561152/"
+  },
+  "usgs-full": {
+    "org": "US Geological Survey",
+    "title": "Mineral Commodity Summaries 2026 full compilation",
+    "date": "6 February 2026; revised 27 May 2026",
+    "url": "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026.pdf"
+  },
+  "musk-fleet": {
+    "org": "Elon Musk",
+    "title": "G20 Innovation Ministerial remarks and transcript",
+    "date": "1 September 2026; ten year operating-fleet prediction",
+    "url": "https://elonmuskarchive.org/video/g20-innovation-ministerial-2026"
+  },
+  "gajra": {
+    "org": "Luke Nathan Hayes",
+    "title": "GAJRA Earth public concept site",
+    "date": "July 2026 concept build; checked 7 November 2026",
+    "url": "https://auraofintelligence.github.io/gajra-earth-claude-build/"
+  },
+  "protopian": {
+    "org": "Luke Nathan Hayes and i C infinity",
+    "title": "A Protopian Gambit album and songs",
+    "date": "Album link and song titles supplied by the author; referenced 7 November 2026",
+    "url": "https://auraofintelligence.github.io/i-C-infinity-music-universe/albums/a-protopian-gambit/"
+  },
+  "terafab": {
+    "org": "Tesla SpaceX and xAI",
+    "title": "Terafab public programme and scale targets",
+    "date": "Programme launched 21 March 2026; public page checked 7 November 2026",
+    "url": "https://terafab.ai/"
+  },
+  "sp-demand": {
+    "org": "S and P Global Energy and Market Intelligence",
+    "title": "Copper in the Age of AI Challenges of Electrification",
+    "date": "8 January 2026; Figures 1 and 42 and humanoid discussion on pages 48 to 49",
+    "url": "https://www.spglobal.com/content/dam/spglobal/global-assets/en/special-reports/copper-in-the-age-of-ai/Copper%20in%20the%20Age%20of%20AI_January%202026.pdf"
+  },
+  "al-demand": {
+    "org": "McKinsey Energy and Materials Practice",
+    "title": "Cleaning up mixed scrap Decarbonizing aluminum through circularity",
+    "date": "24 July 2025; outlook for 2025 to 2035, based on Q2 2025 supply pipeline",
+    "url": "https://www.mckinsey.com/industries/metals-and-mining/our-insights/cleaning-up-mixed-scrap-decarbonizing-aluminum-through-circularity"
+  },
+  "sdg-agenda": {
+    "org": "United Nations",
+    "title": "Transforming our world the 2030 Agenda for Sustainable Development",
+    "date": "25 September 2015; Goals 6 7 9 11 and 12",
+    "url": "https://sdgs.un.org/2030agenda"
+  },
+  "sdg-2026": {
+    "org": "United Nations Statistics Division",
+    "title": "The Sustainable Development Goals Report 2026",
+    "date": "7 July 2026",
+    "url": "https://unstats.un.org/sdgs/report/2026/"
+  },
+  "waymo-safety": {
+    "org": "Waymo",
+    "title": "Safety performance update through June 2026",
+    "date": "24 September 2026; company analysis of over 270 million autonomous miles in five US service areas",
+    "url": "https://waymo.com/blog/shorts/safetydata-september26/"
+  },
+  "aus-population": {
+    "org": "Australian Government Centre for Population",
+    "title": "2025 Population Statement",
+    "date": "Published January 2026; March 2026 corrected report; population at 30 June; rounded figures used here",
+    "url": "https://population.gov.au/sites/population.gov.au/files/2026-03/population-statement-2025.pdf"
+  },
+  "aus-pop-actual": {
+    "org": "Australian Bureau of Statistics",
+    "title": "Population up 1 point 5 per cent in June 2025",
+    "date": "18 December 2025; estimated resident population at 30 June 2025",
+    "url": "https://www.abs.gov.au/media-centre/media-releases/population-15-june-2025"
+  },
+  "esoo-2026": {
+    "org": "Australian Energy Market Operator",
+    "title": "2026 Electricity Statement of Opportunities for the National Electricity Market",
+    "date": "25 August 2026; Step Change demand outlook; pages 28 to 32",
+    "url": "https://www.aemo.com.au/-/media/files/electricity/nem/planning_and_forecasting/nem_esoo/2026/2026-electricity-statement-of-opportunities.pdf"
+  },
+  "aus-export-2026": {
+    "org": "Australian Department of Industry Science and Resources",
+    "title": "Resources and energy quarterly September 2026",
+    "date": "September 2026 edition; public page checked 7 November 2026; export earnings retain stated real dollar basis",
+    "url": "https://www.industry.gov.au/publications/resources-and-energy-quarterly-september-2026"
+  },
+  "housing-2026": {
+    "org": "National Housing Supply and Affordability Council",
+    "title": "Quarterly Report August 2026",
+    "date": "21 August 2026; latest data available to 6 August",
+    "url": "https://nhsac.gov.au/reports-and-submissions/quarterly-report-august-2026"
+  }
+}

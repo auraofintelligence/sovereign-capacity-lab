@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://auraofintelligence.github.io/sovereign-capacity-lab/sitemap.xml
